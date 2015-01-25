@@ -1,0 +1,1193 @@
+/* The * selector applies styling for ALL selectors,
+	Mostly used for reseting and such */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none;
+	transition: all 0.5s ease;
+	margin: 0;
+	padding: 0;
+	-webkit-text-rendering: optimizeLegibility;
+	-moz-text-rendering: optimizeLegibility;
+	-ms-text-rendering: optimizeLegibility;
+	-o-text-rendering: optimizeLegibility;
+	text-rendering: optimizeLegibility;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Opensans', serif;
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 400;
+	color: #58626E;
+}
+	/* General styling for all headlines */
+h1, h2, h3, h4, h5, h6 {
+	font-family:'Signika', sans-serif;
+	font-weight: 800;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+	/* Styling for paragraphs */
+p {
+	width: 100%;
+	margin: 20px auto;
+	color: #435058;
+}
+	/* A simple little "hack" to make all images responsive */
+img {
+	max-width: 100%; 
+}
+
+.containerSvg {
+    width: 20%;
+    height: auto;
+    padding-top: 48%;
+    position: relative;
+    display: inline;
+    float: left;
+    border: 1px solid green;
+}
+ 
+
+/*************************** HEADER *************************/
+
+header {
+	width: 100%;
+	height: 75px;
+	background: #ffffff;
+	box-shadow: 0px 1px 1px rgba(0, 4, 0, 0.07);
+	position: fixed;
+	z-index: 900;
+}
+
+/*  To get everything centered, we put the content in this tag. 
+	Margin: 0 auto; does the magic */
+.container {
+	width: 1000px;
+	margin: 0px auto;
+}
+
+h1 {
+	font-size: 24px;
+	line-height: 32px;
+	float: left;
+	width: 60%;
+	padding: 5px 0;
+}
+
+h1 a {
+	color: #58626E;
+}
+
+h1:hover {
+
+}
+
+/* Styling for the navigation */
+nav  {
+	width: 40%;
+	margin-right: 20px;
+	float: right;
+}
+
+nav li {
+	font-size: 16px;
+	float: right;
+	text-align: center;
+	width: 33%;
+}
+
+nav li a {
+	display: block;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #58626E;
+	height: 75px;
+	padding: 25px 0 30px 0px;
+}
+
+/*  When we hover over the links, we want a different color
+	and a border at the bottom  */
+nav li:hover {
+	border-bottom: 2px solid #469ab9;
+}
+
+nav li a:hover {
+	color: #469ab9;
+}
+
+/*************************** LARGE IMAGE *************************/
+
+.largeImage {
+	height: 72vh; 
+	padding: 130px 0;
+	background-color: #435058;
+	text-align: center;
+	position: relative;
+}
+
+/* 
+.largeImage {
+	width: 100%; /* 100% of the browser */
+	height: 100vh; /* = 100% of the browser size */
+	padding: 200px 0;
+	background: url("../images/header_image.png"); /* Here we specify the background image */
+	background-position: center top; /* With this property, we can specify the position of the background image */
+	text-align: center;
+	position: relative; /* Must be specified for centering the .introContainer */
+}
+
+.introContainer {
+	height: 200px;
+	/* This little "hack" makes it perfectly centered within its parent tag */
+	margin: auto;
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+/* This is the Profile picture */
+.avatar {
+	border-radius: 50%;
+	border: 5px solid #ffffff;
+}
+
+.wrapper_logo {
+	width: 30%;
+	margin-left: 20px;
+	float: left;
+	border: 1px solid green;
+}
+
+.logo {
+	margin-top: 20px;
+	height: 30px;
+	text-align: center;
+	position: relative;
+	width:auto;
+	float: left;
+	border: 1px solid red;
+}
+
+.intro {
+	font-size: 46px;
+	line-height: 52px;
+	margin-top: 20px;
+	color: #ffffff;
+}
+
+/* Just some styling to make the fab ampersand */
+.ampersand {
+	font-family: Baskerville, serif;
+	font-style: italic;
+	font-weight: normal;
+}
+
+/* To change color of "Mobile Experiences" */ 
+.highlighted {
+	color: #469ab9;
+}
+
+h2 .highlighted {
+	color: #469ab9;
+}
+/*************************** ABOUT SECTION *************************/
+
+/* Styling for all sections except ABOUT */
+section {
+	clear: both;
+	margin: 0px auto;
+	padding: 50px;
+	width: 100%;
+	text-align: center;
+}
+
+.metaInformation {
+	clear: both;
+	margin: 0px auto;
+	padding: 0px;
+	width: 70%;
+	color: #435058;
+	text-align: center;
+}
+
+
+.sectionTitle {
+	font-size: 46px;
+	line-height: 52px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+
+
+/* OLD social Media Icons
+.socialMedia {
+	width: auto;
+	margin: 0px auto 0;
+	display: block;
+	border: 1px solid red;
+}
+
+.socialMedia a {
+	margin-right: 20px;
+}
+
+.socialMedia a img {
+	opacity: 0.6;
+}
+
+.socialMedia a img:hover {
+	opacity: 1;
+}
+
+.socialMedia a:last-child {
+	margin-right: 0px;
+}
+
+*/
+
+/* That light gray line between the sections */
+.separator {
+	width: 1000px;
+	margin: 0;
+	border: 1px solid #D8D8D8;
+	clear: both;
+}
+
+
+
+/* Social Media Icons */
+
+.svg-icon {
+  width: 3em;
+  height: 3em;
+  border: red 1px solid;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #469ab9;;
+}
+
+.svg-icon path a:hover,
+.svg-icon polygon a:hover,
+.svg-icon rect a:hover {
+	fill: #000000;
+}
+
+.svg-icon circle {
+  stroke: #435058; 
+  stroke-width: 1;
+}
+/*************************** WORK SECTION *************************/
+
+/* This is a container for the projects */
+.portfolio {
+	margin-top: 50px;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+/* Styling for the bigger, featured project to the left */
+.featured {
+	width: 100%;
+	margin-right: 0px;
+	margin-top: 20px;
+	float: none;
+
+	
+}
+
+.featured figure {
+	
+	display: block;
+	float: left;
+	width: 100%;
+	height: 600px;
+	position: relative;
+	padding: 0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	margin: 10px 10px 0px 0px;
+	
+}
+
+/* Styling for when we hover over the image */
+figcaption {
+	position: absolute;
+	width: 100%;
+	height: 600px;
+	bottom: 0;
+	left: 0;
+	padding: 10% 10%;
+	background: rgba(0, 0, 0, 0.7);
+    color: #D0D0D0;
+    opacity: 0;
+
+}
+
+figcaption:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+/* This is the Title of the Project */
+.featured figcaption h3 {
+    margin: 0px;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* This is the Read More link */
+.featured figcaption a {
+    text-align: center;
+    padding: 0px;
+    display: block;
+    background: none;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.featured figure:nth-child(2),
+.featured figure:nth-child(4) {
+	margin-bottom: 0px;
+}
+
+.projects figure:nth-child(3),
+.projects figure:nth-child(4) {
+	margin-top: 20px;
+}
+
+
+/*************************** OTHER PROJECTS ***************************/
+
+/* Styling for the smaller projects to the right */
+.projects {
+	width: 50%;
+	float: left;
+}
+
+.projects figure {
+	display: block;
+	float: left;
+	width: 235px;
+	height: 235px;
+	position: relative;
+	padding: 0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+/* This is the Title of the Project */
+.projects figcaption h3 {
+    margin: 10px;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* This is the Read More link */
+.projects figcaption a {
+    text-align: center;
+    padding: 0px;
+    display: block;
+    background: none;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/*  This is for making sure the margins is right. Since we specified margins for all 
+	.projects above, we need to remove some of the margins to make it align correctly.
+	with the "nth-child" selector, we can specify which item we want to style */
+.projects figure:nth-child(2),
+.projects figure:nth-child(4) {
+	margin-right: 0px;
+}
+
+.projects figure:nth-child(3),
+.projects figure:nth-child(4) {
+	margin-top: 20px;
+}
+
+/*************************** CONTACT SECTION *************************/
+
+/* The Email Me button */
+button {
+	width: 250px;
+	height: 70px;
+	background: #95C763;
+	border: none;
+}
+
+button a {
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+/* And the color when we hover over it */
+button:hover {
+	background: #719E44;
+}
+
+/*************************** FOOTER SECTION *************************/
+
+footer {
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	background: #58626E;
+}
+
+/* The text in the footer */
+footer p {
+	padding: 35px 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+/************************** BACK TO TOP BUTTON *************************/
+
+.cd-top {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 13px 17px;
+  color: #ffffff;
+  font-size: 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  white-space: nowrap;
+  background: #95C763;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* When you keep scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #95C763;
+  opacity: 1;
+}
+
+
+/************************************************************************************ 
+								
+								MEDIA QUERIES 
+
+					Is used for making the website responsive.
+					The first media query is used for smaller 
+					devices, such as iPhone 4. Then we work
+					upwards, so it looks OK in all sizes. It's
+					the same selectors as above, we just change
+					the values to make it looks better on other
+					devices.
+
+************************************************************************************/
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 639px) {
+
+	/**************************** HEADER ***************************/
+
+	header {
+		width: 100%;
+		height: 120px;
+		background: #ffffff;
+		box-shadow: 0px 1px 1px rgba(0, 4, 0, 0.07);
+		position: static;
+		/*overflow: hidden;*/
+	}
+	
+	.container {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+
+		.wrapper_logo {
+			width: 100%;
+			height: 40px;
+			margin: 20px 0px 0px 0px;
+			border: 1px solid green;
+		}
+
+		.logo {
+			width: 100%;
+			margin: 0px auto;
+			border: 1px solid red;
+		}
+
+
+	h1 {
+	font-size: 18px;
+	line-height: 18px;
+	width: 100%;
+	padding: 0;
+	text-align: center;
+	}
+
+	h1 a {
+		color: #58626E;
+	}
+
+	nav  {
+		width: 100%;
+		height: 32px;
+		background: #ffffff;
+	}
+
+	nav li {
+		font-size: 12px;
+		float: left;
+		text-align: center;
+		width: 33%;
+	}
+
+	nav li a {
+		display: block;
+		font-family: 'Lato', sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: #58626E;
+		height: 32px;
+		padding: 3px 0 3px 0px;
+	}
+
+	/*************************** LARGE IMAGE *************************/
+
+	.largeImage {
+		width: 100%;
+		height: 100vh;
+		padding: 0px;
+		background: url("../images/header_image.png");
+		background-position: center;
+		text-align: center;
+		position: relative;
+	}
+
+	.introContainer {
+		height: 365px;
+		width: 96%;
+		margin: auto;
+	  	position: absolute;
+	  	top: 0; left: 0; bottom: 0; right: 0;
+	}
+
+	.avatar {
+		border-radius: 50%;
+		width: 40%;
+		border: 5px solid #ffffff;
+	}
+
+	
+
+	img {
+		max-width: 100%;
+	}
+
+	.intro {
+		font-size: 24px;
+		line-height: 42px;
+		color: #ffffff;
+	}
+
+	.ampersand {
+		font-family: Baskerville, serif;
+		font-style: italic;
+		font-weight: normal;
+		
+	}
+
+	.highlighted {
+		color: #95C763;
+	}
+
+	/*************************** ABOUT SECTION *************************/
+
+	section {
+		clear: both;
+		margin: 0px auto;
+		padding: 75px 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.sectionTitle {
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		margin: 0;
+		font-size: 16px;
+	}
+
+	p {
+		width: 70%;
+		margin: 30px auto;
+		font-size: 14px;
+	}
+
+	.socialMedia {
+		margin: 30px auto;
+		width: 180px;
+	}
+
+	.socialMedia a {
+		margin-right: 20px;
+	}
+
+	.socialMedia a img {
+		opacity: 0.6;
+	}
+
+	.socialMedia a img:hover {
+		opacity: 1;
+	}
+
+	.socialMedia a:last-child {
+		margin-right: 0px;
+	}
+
+
+	.separator {
+		width: 100%;
+		margin: 0 auto;
+		border: 1px solid #D8D8D8;
+		clear: both;
+	}
+
+	/*************************** WORK SECTION *************************/
+
+	.portfolio {
+		margin-top: 50px;
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+
+	.featured {
+		display: block;
+		width: 100%;
+		margin: 10px auto;
+		float: none;
+		overflow: hidden;
+	}
+
+	.featured figure {
+		display: block;
+		float: left;
+		width: 100%;
+		height: 300px;
+		position: relative;
+		padding: 0;
+		-webkit-margin-before: 0;
+		-webkit-margin-after: 0;
+		-webkit-margin-start: 0;
+		-webkit-margin-end: 0;
+		margin-right: 10px;
+	}
+
+	figcaption {
+		position: absolute;
+		width: 100%;
+		height: 300px;
+		bottom: 0;
+		left: 0;
+		padding: 10% 10%;
+		background: rgba(0, 0, 0, 0.7);
+	    color: #D0D0D0;
+	    opacity: 0;
+	}
+
+	figcaption:hover {
+		opacity: 1;
+		cursor: pointer;
+	}
+
+	.featured figcaption h3 {
+	    margin: 0px;
+	    padding: 0;
+	    color: #fff;
+	    font-size: 24px;
+	}
+	 
+	.featured figcaption a {
+	    text-align: center;
+	    padding: 0px;
+	    display: block;
+	    background: none;
+	    color: #fff;
+	    margin-top: 10px;
+	}
+
+	/*************************** OTHER PROJECTS ***************************/
+
+	.projects {
+		width: 100%;
+		float: none;
+	}
+
+	.projects img {
+		width: 200;
+		height: 200px;
+	}
+
+	.projects figure {
+		display: block;
+		float: left;
+		width: 200px;
+		height: 200px;
+		position: relative;
+		padding: 0;
+		-webkit-margin-before: 0;
+		-webkit-margin-after: 0;
+		-webkit-margin-start: 0;
+		-webkit-margin-end: 0;
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+	.projects figcaption {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		bottom: 0;
+		left: 0;
+		padding: 20% 10%;
+		background: rgba(0, 0, 0, 0.7);
+	    color: #D0D0D0;
+	    opacity: 0;
+	}
+
+	.projects figcaption:hover {
+		opacity: 1;
+		cursor: pointer;
+	}
+
+	.projects figcaption h3 {
+	    margin: 10px;
+	    padding: 0;
+	    color: #fff;
+	    font-size: 24px;
+	}
+	 
+	.projects figcaption a {
+	    text-align: center;
+	    padding: 0px;
+	    display: block;
+	    background: none;
+	    color: #fff;
+	    margin-top: 0px;
+	}
+
+	.projects figure:nth-child(2),
+	.projects figure:nth-child(4) {
+		margin-right: 0px;
+	}
+
+	.projects figure:nth-child(3),
+	.projects figure:nth-child(4) {
+		margin-top: 0px;
+	}
+
+	/*************************** FOOTER SECTION *************************/
+
+	footer {
+		width: 100%;
+		height: 100px;
+		text-align: center;
+		background: #58626E;
+	}
+
+	footer p {
+		font-size: 14px;
+		padding: 35px 0;
+		margin-top: 0;
+		margin-bottom: 0;
+		color: #ffffff;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+
+
+}
+
+/* For bigger smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 640px) and (max-width : 960px) {
+
+	header {
+		width: 100%;
+		height: 140px;
+		background: #ffffff;
+		box-shadow: 0px 1px 1px rgba(0, 4, 0, 0.07);
+		position: fixed;
+		z-index: 900;
+	}
+	
+	.container {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+
+		.wrapper_logo {
+			width: 100%;
+			height: 40px;
+			margin: 20px 0px 20px 0px;
+			border: 1px solid green;
+		}
+
+		.logo {
+			width: 100%;
+			height: 60px;
+			margin: 0px auto;
+			border: 1px solid red;
+		}
+
+	h1 {
+	font-size: 24px;
+	line-height: 24px;
+	width: 100%;
+	text-align: center;
+	padding: 2px 0;
+	
+	}
+
+	h1 a {
+		color: #58626E;
+	}
+
+	nav  {
+		width: 100%;
+		height: 40px;
+	}
+
+	nav li {
+		font-size: 14px;
+		float: left;
+		text-align: center;
+		width: 33%;
+	}
+
+	nav li a {
+		display: block;
+		font-family: 'Lato', sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: #58626E;
+		height: 75px;
+		height: 50px;
+		padding: 15px 0 20px 0px;
+	}
+
+	/* Small screen, but retina, stuff to override above media query */
+
+	@media
+	only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),
+	only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
+	only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
+	only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px),
+	only screen and (                min-resolution: 192dpi) and (min-width: 320px),
+	only screen and (                min-resolution: 2dppx)  and (min-width: 320px) { 
+
+	  
+	/* TODO http://css-tricks.com/snippets/css/retina-display-media-query/ */
+
+
+	}
+
+	/*************************** LARGE IMAGE *************************/
+
+	.largeImage {
+		width: 100%;
+		height: 100vh;
+		padding: 0px;
+		background: url("../images/header_image.png");
+		background-position: center top;
+		text-align: center;
+		position: relative;
+	}
+
+	.introContainer {
+		height: 365px;
+		margin: auto;
+	  	position: absolute;
+	  	top: 0; left: 0; bottom: 0; right: 0;
+	}
+
+	.avatar {
+		border-radius: 50%;
+
+		border: 5px solid #ffffff;
+	}
+
+
+
+	.intro {
+		font-size: 36px;
+		line-height: 44px;
+		color: #ffffff;
+	}
+
+	.ampersand {
+		font-family: Baskerville, serif;
+		font-style: italic;
+		font-weight: normal;
+		
+	}
+
+	.highlighted {
+		color: #95C763;
+	}
+
+	/*************************** ABOUT SECTION *************************/
+
+	section {
+		clear: both;
+		margin: 0px auto;
+		padding: 125px 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.sectionTitle {
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		margin: 0;
+	}
+
+	p {
+		width: 70%;
+		margin: 50px auto;
+	}
+
+	.socialMedia {
+		margin: 50px auto 0;
+		width: 180px;
+	}
+
+	.socialMedia a {
+		margin-right: 20px;
+	}
+
+	.socialMedia a img {
+		opacity: 0.6;
+	}
+
+	.socialMedia a img:hover {
+		opacity: 1;
+	}
+
+	.socialMedia a:last-child {
+		margin-right: 0px;
+	}
+
+
+	.separator {
+		width: 1000px;
+		margin: 0 auto;
+		border: 1px solid #D8D8D8;
+		clear: both;
+	}
+
+	/*************************** WORK SECTION *************************/
+
+	.portfolio {
+		margin-top: 50px;
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+
+	.featured {
+		display: block;
+		width: 100%;
+		margin: 10px auto;
+		float: none;
+		overflow: hidden;
+	}
+
+	.featured figure {
+		display: block;
+		float: left;
+		width: 100%;
+		height: 400px;
+		position: relative;
+		padding: 0;
+		-webkit-margin-before: 0;
+		-webkit-margin-after: 0;
+		-webkit-margin-start: 0;
+		-webkit-margin-end: 0;
+		margin-right: 10px;
+	}
+
+	figcaption {
+		position: absolute;
+		width: 100%;
+		height: 400px;
+		bottom: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.7);
+	    color: #D0D0D0;
+	    opacity: 0;
+	}
+
+	figcaption:hover {
+		opacity: 1;
+		cursor: pointer;
+	}
+
+	.featured figcaption h3 {
+	    margin: 10px;
+	    padding: 0;
+	    color: #fff;
+	    font-size: 24px;
+	}
+	 
+	.featured figcaption a {
+	    text-align: center;
+	    padding: 0px;
+	    display: block;
+	    background: none;
+	    color: #fff;
+	    margin-top: 10px;
+	}
+
+	/*************************** OTHER PROJECTS ***************************/
+
+	.projects {
+		clear: both;
+		width: 490px;
+		float: none;
+		margin: 20px auto;
+		overflow: hidden;
+	}
+
+	.projects img {
+		width: 235px;
+		height: 235px;
+	}
+
+	.projects figure {
+		display: block;
+		float: left;
+		width: 235px;
+		height: 235px;
+		position: relative;
+		padding: 0;
+		-webkit-margin-before: 0;
+		-webkit-margin-after: 0;
+		-webkit-margin-start: 0;
+		-webkit-margin-end: 0;
+		margin-right: 20px;
+		margin-left: 0px;
+	}
+
+	.projects figcaption {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		bottom: 0;
+		left: 0;
+		padding: 25% 10%;
+		background: rgba(0, 0, 0, 0.7);
+	    color: #D0D0D0;
+	    opacity: 0;
+	}
+
+	.projects figcaption:hover {
+		opacity: 1;
+		cursor: pointer;
+	}
+
+	.projects figcaption h3 {
+	    margin: 10px;
+	    padding: 0;
+	    color: #fff;
+	    font-size: 24px;
+	}
+	 
+	.projects figcaption a {
+	    text-align: center;
+	    padding: 0px;
+	    display: block;
+	    background: none;
+	    color: #fff;
+	    margin-top: 0px;
+	}
+
+	.projects figure:nth-child(2),
+	.projects figure:nth-child(4) {
+		margin-right: 0px;
+	}
+
+	.projects figure:nth-child(3),
+	.projects figure:nth-child(4) {
+		margin-top: 20px;
+	}
+
+	/*************************** FOOTER SECTION *************************/
+
+	footer {
+		width: 100%;
+		height: 100px;
+		text-align: center;
+		background: #58626E;
+	}
+
+	footer p {
+		font-size: 14px;
+		padding: 35px 0;
+		margin-top: 0;
+		margin-bottom: 0;
+		color: #ffffff;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+
+
+}
+
