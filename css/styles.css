@@ -39,7 +39,6 @@ h1, h2, h3, h4, h5, h6 {
 p {
 	width: 100%;
 	margin: 20px auto;
-	color: #435058;
 }
 	/* A simple little "hack" to make all images responsive */
 img {
@@ -161,20 +160,21 @@ nav li a:hover {
 /*************************** LARGE IMAGE *************************/
 
 .largeImage {
-	height: 72vh; 
+	height: auto; 
 	padding: 130px 0;
 	background-color: #435058;
 	text-align: center;
 	position: relative;
 }
 
-/* 
+ 
 .largeImage {
 	width: 100%; /* 100% of the browser */
 	height: 100vh; /* = 100% of the browser size */
 	padding: 200px 0;
-	background: url("../images/header_image.png"); /* Here we specify the background image */
+	background: url("../images/header_image_4.jpg"); /* Here we specify the background image */
 	background-position: center top; /* With this property, we can specify the position of the background image */
+	background-repeat: no-repeat;
 	text-align: center;
 	position: relative; /* Must be specified for centering the .introContainer */
 }
@@ -199,7 +199,7 @@ nav li a:hover {
 	height: 75px;
 	margin: 0px auto;
 	float: left;
-	background-color: #ffffff;
+	background-color: #;
 }
 
 .logo {
@@ -238,9 +238,13 @@ h2 .highlighted {
 section {
 	clear: both;
 	margin: 0px auto;
-	padding: 50px;
+	padding-top: 50px;
 	width: 100%;
 	text-align: center;
+}
+
+section.grey {
+	background-color:  #eeeeee;
 }
 
 .metaInformation {
@@ -324,45 +328,42 @@ section {
 
 /* This is a container for the projects */
 .portfolio {
-	margin-top: 50px;
+	margin: 50px auto;
 	width: 100%;
 	height: auto;
 	overflow: hidden;
+	background-color: #00dd00;
 }
 
 /* Styling for the bigger, featured project to the left */
 .featured {
 	width: 100%;
-	margin-right: 0px;
-	margin-top: 20px;
-	float: none;
-
-	
+	padding-bottom: 4%;	
 }
+
 
 .featured figure {
 	
 	display: block;
-	float: left;
 	width: 100%;
-	height: 600px;
+	height: auto;
 	position: relative;
-	padding: 0;
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
 	-webkit-margin-start: 0;
 	-webkit-margin-end: 0;
-	margin: 10px 10px 0px 0px;
+	margin: 0px 0px 0px 0px;
 	
 }
 
 /* Styling for when we hover over the image */
 figcaption {
 	position: absolute;
-	width: 100%;
-	height: 600px;
+	top: 0;
 	bottom: 0;
 	left: 0;
+	width: 100%;
+	height: auto;
 	padding: 10% 10%;
 	background: rgba(0, 0, 0, 0.7);
     color: #D0D0D0;
@@ -379,7 +380,7 @@ figcaption:hover {
 .featured figcaption h3 {
     margin: 0px;
     padding: 0;
-    color: #fff;
+    color:#58626E;
     font-size: 24px;
 }
 
@@ -402,7 +403,7 @@ figcaption:hover {
 .projects figure:nth-child(4) {
 	margin-top: 20px;
 }
-
+*/
 
 /*************************** OTHER PROJECTS ***************************/
 
@@ -555,6 +556,9 @@ footer p {
 					the values to make it looks better on other
 					devices.
 
+
+					TODO: figcaption for ipad;
+
 ************************************************************************************/
 
 
@@ -633,7 +637,7 @@ footer p {
 		width: 100%;
 		height: 100vh;
 		padding: 0px;
-		background: url("../images/header_image.png");
+		background: url("../images/header_image.jpg");
 		background-position: center;
 		text-align: center;
 		position: relative;
@@ -657,6 +661,7 @@ footer p {
 
 	img {
 		max-width: 100%;
+		border: solid red 1px;
 	}
 
 	.intro {
@@ -692,13 +697,13 @@ footer p {
 		letter-spacing: 2px;
 		text-transform: uppercase;
 		margin: 0;
-		font-size: 16px;
+		
 	}
 
 	p {
 		width: 70%;
 		margin: 30px auto;
-		font-size: 14px;
+		font-size: 18px;
 	}
 
 	.socialMedia {
@@ -723,13 +728,6 @@ footer p {
 	}
 
 
-	.separator {
-		width: 100%;
-		margin: 0 auto;
-		border: 1px solid #D8D8D8;
-		clear: both;
-	}
-
 
 	/*************************** WORK SECTION *************************/
 
@@ -740,60 +738,70 @@ footer p {
 		overflow: hidden;
 	}
 
-	.featured {
-		display: block;
-		width: 100%;
-		margin: 10px auto;
-		float: none;
-		overflow: hidden;
-	}
+/*************************** Featured Project *************************/
 
-	.featured figure {
-		display: block;
-		float: left;
-		width: 100%;
-		height: 300px;
-		position: relative;
-		padding: 0;
-		-webkit-margin-before: 0;
-		-webkit-margin-after: 0;
-		-webkit-margin-start: 0;
-		-webkit-margin-end: 0;
-		margin-right: 10px;
-	}
+.featured {
+	width: 100%;
 
-	figcaption {
-		position: absolute;
-		width: 100%;
-		height: 300px;
-		bottom: 0;
-		left: 0;
-		padding: 10% 10%;
-		background: rgba(0, 0, 0, 0.7);
-	    color: #D0D0D0;
-	    opacity: 0;
-	}
+}
 
-	figcaption:hover {
-		opacity: 1;
-		cursor: pointer;
-	}
 
-	.featured figcaption h3 {
-	    margin: 0px;
-	    padding: 0;
-	    color: #fff;
-	    font-size: 24px;
-	}
-	 
-	.featured figcaption a {
-	    text-align: center;
-	    padding: 0px;
-	    display: block;
-	    background: none;
-	    color: #fff;
-	    margin-top: 10px;
-	}
+.featured figure {
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin: 0px 20px;
+	padding: 10%;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+    background-color: #ffffff;
+    border: solid green 1px;	
+}
+
+/* Styling for when we hover over the image */
+figcaption {
+	position: relative;
+	width: 100%;
+	height: auto;
+    color: #58626E;
+    background-color: #ffffff;
+    opacity: 1;
+    border: solid green 1px;
+
+}
+
+
+
+/* This is the Title of the Project */
+.featured figcaption h3 {
+    margin: 0px;
+    padding: 0;
+    color:#58626E;
+    font-size: 24px;
+}
+
+/* This is the Read More link */
+.featured figcaption a {
+    text-align: center;
+    padding: 0px;
+    display: block;
+    color: #58626E;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.featured figure:nth-child(2),
+.featured figure:nth-child(4) {
+	margin-bottom: 0px;
+}
+
+.projects figure:nth-child(3),
+.projects figure:nth-child(4) {
+	margin-top: 20px;
+}
+*/
 
 	/*************************** OTHER PROJECTS ***************************/
 
@@ -888,7 +896,12 @@ footer p {
 
 }
 
-/* For bigger smartphones (portrait and landscape) ----------- */
+/***************************************************************
+
+/* For bigger smartphones (portrait and landscape) ----------- 
+
+****************************************************************/
+
 @media only screen and (min-width : 640px) and (max-width : 960px) {
 
 	header {
@@ -978,7 +991,7 @@ footer p {
 		width: 100%;
 		height: 100vh;
 		padding: 0px;
-		background: url("../images/header_image.png");
+		background: url("../images/header_image.jpg");
 		background-position: center top;
 		text-align: center;
 		position: relative;
@@ -996,7 +1009,6 @@ footer p {
 
 		border: 5px solid #ffffff;
 	}
-
 
 
 	.intro {
@@ -1060,7 +1072,7 @@ footer p {
 
 
 	.separator {
-		width: 1000px;
+		width: 100%;
 		margin: 0 auto;
 		border: 1px solid #D8D8D8;
 		clear: both;
@@ -1077,46 +1089,38 @@ footer p {
 
 	.featured {
 		display: block;
-		width: 100%;
-		margin: 10px auto;
 		float: none;
+		width: 100%;
+		margin: 20px 0px;
+		background-color: #eeeeee;
 		overflow: hidden;
 	}
 
 	.featured figure {
+		background-color: #ffffff;
+		border: solid green 1px;
 		display: block;
-		float: left;
+		height: auto;
 		width: 100%;
-		height: 400px;
+		padding: 10%;
 		position: relative;
-		padding: 0;
-		-webkit-margin-before: 0;
-		-webkit-margin-after: 0;
-		-webkit-margin-start: 0;
-		-webkit-margin-end: 0;
-		margin-right: 10px;
 	}
 
 	figcaption {
-		position: absolute;
+		position: relative;
 		width: 100%;
-		height: 400px;
+		height: auto;
 		bottom: 0;
 		left: 0;
-		background: rgba(0, 0, 0, 0.7);
-	    color: #D0D0D0;
-	    opacity: 0;
-	}
-
-	figcaption:hover {
-		opacity: 1;
-		cursor: pointer;
+		background-color: #ffffff;
+	    opacity: 1;
+	    border: solid blue 1px;
 	}
 
 	.featured figcaption h3 {
-	    margin: 10px;
+	    margin: 0px;
 	    padding: 0;
-	    color: #fff;
+	    color: #435058;
 	    font-size: 24px;
 	}
 	 
@@ -1125,7 +1129,7 @@ footer p {
 	    padding: 0px;
 	    display: block;
 	    background: none;
-	    color: #fff;
+	    color: #469ab9;
 	    margin-top: 10px;
 	}
 
