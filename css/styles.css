@@ -26,7 +26,7 @@ html, body {
 	font-size: 16px;
 	line-height: 28px;
 	font-weight: 400;
-	color: #58626E;
+	color: #445055;
 }
 	/* General styling for all headlines */
 h1, h2, h3, h4, h5, h6 {
@@ -81,7 +81,7 @@ h1 {
 }
 
 h1 a {
-	color: #58626E;
+	color: #445055;
 }
 
 h1:hover {
@@ -150,16 +150,16 @@ nav li a {
 /*  When we hover over the links, we want a different color
 	and a border at the bottom  */
 nav li:hover {
-	border-bottom: 2px solid #469ab9;
+	border-bottom: 2px solid #469AB7;
 }
 
 nav li a:hover {
-	color: #469ab9;
+	color: #469AB7;
 }
 
 /*************************** LARGE IMAGE *************************/
 
-.largeImage {
+.largeImageX {
 	height: auto; 
 	padding: 130px 0;
 	background-color: #435058;
@@ -171,12 +171,13 @@ nav li a:hover {
 .largeImage {
 	width: 100%; /* 100% of the browser */
 	height: 100vh; /* = 100% of the browser size */
-	padding: 200px 0;
+	padding: 0px;
 	background: url("../images/header_image_4.jpg"); /* Here we specify the background image */
 	background-position: center top; /* With this property, we can specify the position of the background image */
 	background-repeat: no-repeat;
 	text-align: center;
 	position: relative; /* Must be specified for centering the .introContainer */
+	overflow: scroll;
 }
 
 .introContainer {
@@ -184,7 +185,7 @@ nav li a:hover {
 	/* This little "hack" makes it perfectly centered within its parent tag */
 	margin: auto;
   	position: absolute;
-  	top: 0; left: 0; bottom: 0; right: 0;
+  	top: -22%; left: 0; bottom: 0; right: 0;
 }
 
 /* This is the Profile picture */
@@ -213,7 +214,7 @@ nav li a:hover {
 .intro {
 	font-size: 46px;
 	line-height: 52px;
-	margin-top: 20px;
+	padding: 2%;
 	color: #ffffff;
 }
 
@@ -226,11 +227,11 @@ nav li a:hover {
 
 /* To change color of "Mobile Experiences" */ 
 .highlighted {
-	color: #469ab9;
+	color: #469AB7;
 }
 
 h2 .highlighted {
-	color: #469ab9;
+	color: #469AB7;
 }
 /*************************** ABOUT SECTION *************************/
 
@@ -311,7 +312,7 @@ section.grey {
 .svg-icon path,
 .svg-icon polygon,
 .svg-icon rect {
-  fill: #469ab9;;
+  fill: #469AB7;
 }
 
 .svg-icon path a:hover,
@@ -380,7 +381,7 @@ figcaption:hover {
 .featured figcaption h3 {
     margin: 0px;
     padding: 0;
-    color:#58626E;
+    color:#445055;
     font-size: 24px;
 }
 
@@ -488,7 +489,7 @@ footer {
 	width: 100%;
 	height: 100px;
 	text-align: center;
-	background: #58626E;
+	background: #445055;
 }
 
 /* The text in the footer */
@@ -605,7 +606,7 @@ footer p {
 	}
 
 	h1 a {
-		color: #58626E;
+		color: #445055;
 	}
 
 	nav  {
@@ -626,7 +627,7 @@ footer p {
 		font-family: 'Lato', sans-serif;
 		text-transform: uppercase;
 		letter-spacing: 2px;
-		color: #58626E;
+		color: #445055;
 		height: 32px;
 		padding: 3px 0 3px 0px;
 	}
@@ -765,7 +766,7 @@ figcaption {
 	position: relative;
 	width: 100%;
 	height: auto;
-    color: #58626E;
+    color: #445055;
     background-color: #ffffff;
     opacity: 1;
     border: solid green 1px;
@@ -778,7 +779,7 @@ figcaption {
 .featured figcaption h3 {
     margin: 0px;
     padding: 0;
-    color:#58626E;
+    color:#445055;
     font-size: 24px;
 }
 
@@ -787,7 +788,7 @@ figcaption {
     text-align: center;
     padding: 0px;
     display: block;
-    color: #58626E;
+    color: #445055;
     margin-top: 10px;
     text-decoration: underline;
 }
@@ -879,7 +880,7 @@ figcaption {
 		width: 100%;
 		height: 100px;
 		text-align: center;
-		background: #58626E;
+		background: #445055;
 	}
 
 	footer p {
@@ -943,7 +944,7 @@ figcaption {
 	}
 
 	h1 a {
-		color: #58626E;
+		color: #445055;
 	}
 
 	nav  {
@@ -963,7 +964,7 @@ figcaption {
 		font-family: 'Lato', sans-serif;
 		text-transform: uppercase;
 		letter-spacing: 2px;
-		color: #58626E;
+		color: #445055;
 		height: 75px;
 		height: 50px;
 		padding: 15px 0 20px 0px;
@@ -1129,7 +1130,7 @@ figcaption {
 	    padding: 0px;
 	    display: block;
 	    background: none;
-	    color: #469ab9;
+	    color: #469AB7;
 	    margin-top: 10px;
 	}
 
@@ -1212,7 +1213,7 @@ figcaption {
 		width: 100%;
 		height: 100px;
 		text-align: center;
-		background: #58626E;
+		background: #445055;
 	}
 
 	footer p {
