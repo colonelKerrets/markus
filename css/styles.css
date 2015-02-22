@@ -159,13 +159,7 @@ nav li a:hover {
 
 /*************************** LARGE IMAGE *************************/
 
-.largeImageX {
-	height: auto; 
-	padding: 130px 0;
-	background-color: #435058;
-	text-align: center;
-	position: relative;
-}
+
 
  
 .largeImage {
@@ -595,20 +589,6 @@ footer p {
 	}
 
 
-		.wrapper_logo {
-			width: 100%;
-			height: 40px;
-			margin: 20px 0px 0px 0px;
-			border: 1px solid green;
-		}
-
-		.logo {
-			width: 100%;
-			margin: 0px auto;
-			border: 1px solid red;
-		}
-
-
 	h1 {
 	font-size: 18px;
 	line-height: 18px;
@@ -650,7 +630,7 @@ footer p {
 		width: 100%;
 		height: 100vh;
 		padding: 0px;
-		background: url("../images/header_image.jpg");
+		background: url("../images/header_image_4.jpg");
 		background-position: center;
 		text-align: center;
 		position: relative;
@@ -932,7 +912,7 @@ figcaption {
 	}
 
 
-
+		
 
 	h1 {
 	font-size: 24px;
@@ -992,7 +972,7 @@ figcaption {
 		width: 100%;
 		height: 100vh;
 		padding: 0px;
-		background: url("../images/header_image.jpg");
+		background: url("../images/header_image_4.jpg");
 		background-position: center top;
 		text-align: center;
 		position: relative;
