@@ -6,6 +6,9 @@ $(window).scroll(function() {
     console.log($(window).scrollTop());
  		$('.bg').addClass('show');
  		$('nav li a').addClass('navshow');
+ 		$('.logo').removeClass('logoWhite');
+ 		
+
  		
  		
     
@@ -14,6 +17,8 @@ $(window).scroll(function() {
     
     $('.bg').removeClass('show');
     $('nav li a').removeClass('navshow');
+    $('.logo').addClass('logoWhite');
+   
     
  	};   	
 });
