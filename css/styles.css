@@ -114,9 +114,11 @@ h1:hover {
 
 
 /* Styling for the navigation */
+
+
 nav  {
 	width: 40%;
-	margin-right: 20px;
+	margin-right: 16px;
 	float: right;
 }
 
@@ -185,36 +187,28 @@ nav li a:hover {
 /* This is the Profile picture */
 
 
-/*.avatar {
-	border-radius: 50%;
-	border: 5px solid #ffffff;
+.avatar {
 
-}*/
+
+}
 
 .wrapper_logo {
-
 	width: 20%;
-	height: 100px;
-	margin: 16px auto;
+	height: auto;
+	margin: 16px;
 	float: left;
-
 }
 
 .logoWhite path {
 	fill: #ffffff;
-	width: 100%;
+	width: 200px;
 	margin: 50px auto;
 	height: 30px;
 	border: blue solid 2px;
 	text-align: center;
 	position: relative;
-	
 }
 
-.logo {
-
-}
-	
 
 
 .intro {
@@ -574,14 +568,6 @@ footer p {
 
 	/**************************** HEADER ***************************/
 
-	header {
-		width: 100%;
-		height: 100px;
-		background: #ffffff;
-		box-shadow: 0px 1px 1px rgba(0, 4, 0, 0.07);
-		position: static;
-		/*overflow: hidden;*/
-	}
 	
 	.container {
 		width: 100%;
@@ -601,28 +587,29 @@ footer p {
 		color: #445055;
 	}
 
-	nav  {
-		width: 100%;
-		height: 32px;
-		background: #ffffff;
+	.wrapper_logo {
+	width: 100%;
+	display: block;
+	padding: 6% 16% 0% 16% ;
+	margin: 0 auto;
 	}
 
-	nav li {
-		font-size: 12px;
-		float: left;
-		text-align: center;
-		width: 33%;
+
+	nav {
+	width: 100%;
+	display: inline;
+	margin: auto 0;
+	padding: 0 10%;
 	}
 
-	nav li a {
-		display: block;
-		font-family: 'Lato', sans-serif;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		color: #445055;
-		height: 32px;
-		padding: 3px 0 3px 0px;
+	.bg {
+	  width: 100%;
+	  height: 220px;
+	  opacity: 1;
 	}
+
+
+	
 
 	/*************************** LARGE IMAGE *************************/
 
@@ -645,16 +632,12 @@ footer p {
 	}
 
 	.avatar {
-		border-radius: 50%;
-		width: 40%;
-		border: 5px solid #ffffff;
+		padding-top:10%;
 	}
 
-	
 
 	img {
 		max-width: 100%;
-		border: solid red 1px;
 	}
 
 	.intro {
@@ -898,21 +881,15 @@ figcaption {
 @media only screen and (min-width : 640px) and (max-width : 960px) {
 
 	header {
-		width: 100%;
-		height: 140px;
-		background: #ffffff;
-		box-shadow: 0px 1px 1px rgba(0, 4, 0, 0.07);
-		position: fixed;
-		z-index: 900;
+		
 	}
 	
 	.container {
-		width: 100%;
-		margin: 0 auto;
+	width: 100%;
+	margin: 0 auto;
 	}
 
 
-		
 
 	h1 {
 	font-size: 24px;
@@ -924,31 +901,58 @@ figcaption {
 	}
 
 	h1 a {
-		color: #445055;
+	color: #445055;
+	}
+
+
+	.wrapper_logo {
+	width: 30%;
+	height: auto;
+	margin: 16px;
+	float: left;
+	border: solid 1px blue;
+	}
+
+
+	.logoWhite {
+	width: 200px;	
+	}
+
+	.logo{
+	width: 200px;
 	}
 
 	nav  {
-		width: 100%;
-		height: 40px;
+	width: 40%;
+	margin-right: 16px;
+	float: right;
 	}
 
+
 	nav li {
-		font-size: 14px;
-		float: left;
-		text-align: center;
-		width: 33%;
+	font-size: 16px;
+	float: right;
+	text-align: center;
+	width: 33%;
 	}
 
 	nav li a {
-		display: block;
-		font-family: 'Lato', sans-serif;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		color: #445055;
-		height: 75px;
-		height: 50px;
-		padding: 15px 0 20px 0px;
+	display: block;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #ffffff;
+	height: 75px;
+	padding: 25px 0 30px 0px;
 	}
+
+
+	.bg {
+	  width: 100%;
+	  height: 75px;
+	  opacity: 1;
+	}
+
 
 	/* Small screen, but retina, stuff to override above media query */
 
@@ -983,12 +987,6 @@ figcaption {
 		margin: auto;
 	  	position: absolute;
 	  	top: 0; left: 0; bottom: 0; right: 0;
-	}
-
-	.avatar {
-		border-radius: 50%;
-
-		border: 5px solid #ffffff;
 	}
 
 
