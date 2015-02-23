@@ -252,6 +252,7 @@ section.grey {
 	margin: 0px auto;
 	padding: 0px;
 	width: 70%;
+	max-width: 500px;
 	color: #435058;
 	text-align: center;
 }
@@ -367,7 +368,7 @@ figcaption {
 	height: auto;
 	padding: 10% 10%;
 	background: rgba(0, 0, 0, 0.7);
-    color: #D0D0D0;
+    color: #e5ecf0;
     opacity: 0;
 
 }
@@ -381,8 +382,8 @@ figcaption:hover {
 .featured figcaption h3 {
     margin: 0px;
     padding: 0;
-    color:#445055;
-    font-size: 24px;
+    color:#fff;
+    font-size: 42px;
 }
 
 /* This is the Read More link */
@@ -746,8 +747,7 @@ footer p {
 	-webkit-margin-after: 0;
 	-webkit-margin-start: 0;
 	-webkit-margin-end: 0;
-    background-color: #ffffff;
-    border: solid green 1px;	
+    background-color: #ffffff;	
 }
 
 /* Styling for when we hover over the image */
@@ -758,8 +758,6 @@ figcaption {
     color: #445055;
     background-color: #ffffff;
     opacity: 1;
-    border: solid green 1px;
-
 }
 
 
@@ -771,6 +769,7 @@ figcaption {
     color:#445055;
     font-size: 24px;
 }
+
 
 /* This is the Read More link */
 .featured figcaption a {
@@ -1105,8 +1104,8 @@ figcaption {
 		bottom: 0;
 		left: 0;
 		background-color: #ffffff;
+		color: #445055;
 	    opacity: 1;
-	    border: solid blue 1px;
 	}
 
 	.featured figcaption h3 {
