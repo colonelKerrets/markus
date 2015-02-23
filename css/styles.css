@@ -204,7 +204,6 @@ nav li a:hover {
 	width: 200px;
 	margin: 50px auto;
 	height: 30px;
-	border: blue solid 2px;
 	text-align: center;
 	position: relative;
 }
@@ -463,25 +462,39 @@ figcaption:hover {
 /*************************** CONTACT SECTION *************************/
 
 /* The Email Me button */
-button {
-	width: 250px;
-	height: 70px;
-	background: #95C763;
-	border: none;
-}
 
-button a {
-	font-family: 'Lato', sans-serif;
+button, .button {
+	width: auto;
+	height: 50px;
+	background: #469AB7;
+	border: none;
+	 -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding: 0 20px;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
 	font-size: 18px;
-	color: #ffffff;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
 
+
+button a,  {
+
+}
+
 /* And the color when we hover over it */
 button:hover {
-	background: #719E44;
 }
+
+#subscriberEmail{
+	width: auto;
+	height: 50px;
+	padding: 10px;
+
+}
+
+p.antispam { display:none;}
 
 /*************************** FOOTER SECTION *************************/
 
@@ -910,7 +923,6 @@ figcaption {
 	height: auto;
 	margin: 16px;
 	float: left;
-	border: solid 1px blue;
 	}
 
 

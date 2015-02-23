@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+
+
+
+
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -233,21 +237,46 @@
 
 
 
+
 	<section id="contact">
+		<form class="email" action="mailer.php" method="post">
+<p>Name:</p>
+<input type="text" name="name" />
+<p>E-mail:</p>
+<input type="text" name="email" />
+<p>Subject:</p>
+<input type="text" name="subject" />
+<p>Message:</p>
+<textarea name="message"></textarea></p>
+<input class="send" type="submit" value="Send">
+</form>
+
+
 		
 		<div class="metaInformation">
 
-			<img src="images/icon_contact.png">
-			<h2 class="sectionTitle"> Contact </h2>
+			
+			<h2 class="sectionTitle">Keep in touch </h2>
+
+		<form method="post">
+
+  			<label for="subscriber_email">
+			</label>
+			
+			<input id="subscriberEmail" type="email" placeholder="Your e-mail, please"></input>
+
+			<input type="submit" class="button" value="Send"></input>
+
+		</form>
 
 		</div>
 
-		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+		<p> Follow me  </p>
 		
 		<!-- This button opens up the users mail client, with your email address 
 			 already entered in the recipient field. Make sure you specify your 
 			 own email adress -->
-		<button class="email"><a href="mailto:name@mail.com">Email me</a></button>
+		
 
 	</section> <!-- End of the Contact section -->
 	
@@ -255,40 +284,6 @@
     
 
 
-<section class="bottom_banner">
-
-    <div>
-
-    	<form class="mc-subscribe" method="post">
-
-  			<label for="subscriber_email">
-				Stay in touch
-			</label>
-			
-			<input id="subscriber_email" type="email" placeholder="Enter your e-mail. I don’t spam."></input>
-
-			<input type="submit" value="Subscribe"></input>
-
-		</form>
-
-	<div class="follow">
-
-    Follow us
-
-	</div>
-
-		<a class="social_button" href="http://www.linkedin.com/tanjaoberst">
-
-    <svg class="svg replaced-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" xml:space="preserve"></svg>
-
-		</a>
-<a class="social_button" href="http://www.facebook.com/PixelCut">
-
-            <svg class="svg replaced-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" xml:space="preserve"></svg>
-        </a>
-    </div>
-
-</section>
 
 
 
