@@ -229,6 +229,33 @@
 
 
 	<section id="contact">
+
+
+
+
+   
+
+
+		
+		<div class="metaInformation">
+
+			
+			<h2 class="sectionTitle">Keep in touch </h2>
+
+<script type="text/javascript">
+function show(blk1){  document.getElementById(blk1).style.display="block";
+}
+function hide(blk1){
+ document.getElementById(blk1).style.display="none";
+}
+
+</script>
+		
+		<input type="submit" class="keepInTouch" value="Keep in touch" onmouseover="show('blk1');" onmouseout="hide('blk1');" style="border:none">
+    	</input>
+    
+		<iframe class="block" id="blk1" src='contact/form.php'" onmouseover="show(this.id);" onmouseout="hide(this.id);" frameborder='0' width='100%' height='500px' style="border: 1px solid red;"></iframe>
+
 		<form class="email" action="mailer.php" method="post">
 <p>Name:</p>
 <input type="text" name="name" />
@@ -242,11 +269,10 @@
 </form>
 
 
-		
-		<div class="metaInformation">
 
-			
-			<h2 class="sectionTitle">Keep in touch </h2>
+
+
+
 
 		<form method="post">
 
