@@ -17,8 +17,9 @@ function phpfmg_form( $sErr = false ){
 ?>
 
 
+<link rel="stylesheet" href="../css/styles.css">
 
-
+<div class="container">
 <div id='frmFormMailContainer'>
 
 <form name="frmFormMail" id="frmFormMail" target="submitToFrame" action='<?php echo PHPFMG_ADMIN_URL . '' ; ?>' method='post' enctype='multipart/form-data' onsubmit='return fmgHandler.onSubmit(this);'>
@@ -31,9 +32,9 @@ function phpfmg_form( $sErr = false ){
 <ol class='phpfmg_form' >
 
 <li class='field_block' id='field_0_div'><div class='col_label'>
-	<label class='form_field'>Email</label> <label class='form_required' >*</label> </div>
+	<label class='form_field'></label> <label class='form_required' ></label> </div>
 	<div class='col_field'>
-	<input type="text" name="field_0"  id="field_0" value="<?php  phpfmg_hsc("field_0", ""); ?>" class='text_box'>
+	<input type="text" name="field_0"  id="field_0" value="Your email adress""<?php  phpfmg_hsc("field_0", ""); ?>" class='text_box'>
 	<div id='field_0_tip' class='instruction'>Your email address</div>
 	</div>
 </li>
@@ -82,11 +83,22 @@ function phpfmg_form( $sErr = false ){
 </div>
 <!-- end of form container -->
 
+<p> Follow me  </p>
+<div class="socialMedia">
+            
+            <a href="#"><img src="images/icon_dribbble.png"></a>
+            <a href="#"><img src="images/icon_twitter.png"></a>
+            <a href="#"><img src="images/icon_linkedin.png"></a>
+
+</div>
+<!-- end of social media icons -->
+
 
 <!-- [Your confirmation message goes here] -->
 <div id='thank_you_msg' style='display:none;'>
 Your form has been sent. Thank you!
 </div>
+
 
 
             
@@ -114,8 +126,7 @@ function phpfmg_form_css(){
 if( !$formOnly ){
     echo"
 body{
-    margin-left: 18px;
-    margin-top: 18px;
+    width: 100%;
 }
 
 body{
@@ -127,10 +138,15 @@ body{
 
 select, option{
     font-size:13px;
+
+
 }
+
 ";
 }; // if
 ?>
+
+
 
 ol.phpfmg_form{
     list-style-type:none;
@@ -150,7 +166,7 @@ ol.phpfmg_form li{
     clear:both;
     display:block;
     overflow:hidden;
-	width: 100%
+    text-align: center;
 }
 
 
@@ -175,10 +191,8 @@ ol.phpfmg_form li{
 }
 
 .text_box, .text_area, .text_select {
-    min-width:160px;
-    max-width:300px;
-    width: 100%;
-    margin-bottom: 10px;
+    width:340px;
+    text-align: center;
 }
 
 .text_area{
@@ -229,7 +243,9 @@ hr.sectionbreak{
 
 #frmFormMailContainer input[type="submit"]:hover{
     background-color: #E4F0F8;
+
 }
+
 
 <?php phpfmg_text_align();?>    
 

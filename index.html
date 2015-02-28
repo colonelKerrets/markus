@@ -138,15 +138,14 @@
 		<div class="metaInformation">
 		
 			<p><h2> What drives me?<br></h2>
-			I design the experience between users and technology. A beautiful design for me is not only a beautiful visual design, but also adding value to the users by simplifying processes, reducing noise and solving their problems. 
+			I love exploring possibilities and I'm always searching for challenges to improve my output – That’s why I decided to specialize on mobile design and development at Hyper Island in Stockholm, ”The Digital Harvard” as Venture Village calls it.  My forte lies in combining user, business, and development goals to develop relevant user-centered ideas and prototypes. In my spare time I love coding and programming since I'm passionate about building a bridge between designers and developers.
 			<br><br><br>
 			<h2 >How do I reach these goals?<br></h2>
-			I base design decisions on user insights, consider opinions of cross functional team members and reach my design goals by iteration.
+			My design decisions are based on user insights, considering the opinions of cross-functional team members, and reaching my design goals through rapid iterations.
 			<br><br><br>
 			<h2>How do I keep up with the fast paced digital world?<br></h2>
-			I believe in the collaborative mind of a team. Challenge and to be challenged for the sake of improvement is my daily routine. My high level of interpersonal skills and experience provides a catalyst for efficient team work.
+			I believe in the collective collaborative power of a team. In my daily routine, I seek to challenge and to be challenged, in order to improve myself.  My high level of interpersonal skills and experience provides a catalyst for efficient team work.
  			</p>
- 			<br><br>
 			
 		</div>
 
@@ -161,24 +160,27 @@
 
 	<section id="work" class="grey">
 		
-
 		<div class="container">
 
 			<div class="metaInformation">
 
 			<h2 class="sectionTitle"> Work </h2>
 
-			<p>  </p>
+			<p> I have 10+ years experience creating usable and delightful online experiences. A beautiful design for me goes deeper than aesthetic. It also means adding value to the users by simplifying processes and solving their problems. </p>
 
 			</div>
 
-			<!-- Featured Project -->
+			<!-- Project 1 -->
 			<div class="featured">
 				<figure>
 
 					<figcaption>
+						<div class="textVerticalAlign">
 						<h3> Logo <span class="ampersand">&</span> corporate identity </h3>
-						<span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span> <!-- Some information about the project -->
+						<span> From scribble to final artwork. In my role as an Artdirector & design artist I create logos and identities for brands.</span> 
+						</div>
+						<!-- Some information about the project -->
+
 					</figcaption>
 
 					<a href="#">
@@ -188,16 +190,13 @@
 							<source srcset="images/logos_small.jpg" media="(min-width: 320px)">
 							<img srcset="images/logos.jpg" alt="image of logos">
 						</picture>
-
 					</a> 
-
-					
 				</figure>
 			</div>	
 			
 		
 		
-			<!-- Featured Project -->
+			<!-- Project 2-->
 			<div class="featured">
 				<figure>
 
@@ -211,18 +210,36 @@
 							<source srcset="images/nowr@2x.jpg" media="(min-width: 960px)">
 							<source srcset="images/nowr.jpg" media="(min-width: 640px)">
 							<source srcset="images/nowr_small.jpg" media="(min-width: 320px)">
-							<img srcset="images/nowr.jpg" alt="image of UX & UI design">
+							<img srcset="images/nowr.jpg" alt="image of nowr UX & UI design">
 						</picture>
-
 					</a> 
-
-					
 				</figure>
 			</div>
 
-		</div>
-	
 
+
+			<!-- Project 3 -->
+			<div class="featured">
+				<figure>
+
+					<figcaption>
+						<h3> UX <span class="ampersand">&</span> UI design </h3>
+						<span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span> <!-- Some information about the project -->
+					</figcaption>
+
+					<a href="#">
+						<picture>
+							<source srcset="images/ibooks@2x.jpg" media="(min-width: 960px)">
+							<source srcset="images/ibooks.jpg" media="(min-width: 640px)">
+							<source srcset="images/ibooks_small.jpg" media="(min-width: 320px)">
+							<img srcset="images/ibooks.jpg" alt="image of ibooks UX & UI redesign">
+						</picture>
+					</a> 
+				</figure>
+			</div>
+
+
+		</div>
 	</section> <!-- End of the Work section -->		
 
 
@@ -239,56 +256,46 @@
 		
 		<div class="metaInformation">
 
-			
-			<h2 class="sectionTitle">Keep in touch </h2>
 
-<script type="text/javascript">
-function show(blk1){  document.getElementById(blk1).style.display="block";
-}
-function hide(blk1){
- document.getElementById(blk1).style.display="none";
-}
+			<script type="text/javascript">
+		  
+		  	window.onload = function () { 
+			document.getElementById('contactFrame').style.display="none";
+    		}
 
-</script>
+//document.getElementById(contactFrame).style.display="none";
+
+			function hide(contactFrame){
+			document.getElementById('contactFrame').style.display="none";
+			 //document.getElementById(contactFrame).height="0";
+				//document.getElementById(contactFrame).width="0";
+			}
+			function show(contactFrame){ 
+				document.getElementById('contactFrame').style.display="block";
+				//document.getElementById(contactFrame).height="100%";
+				//document.getElementById(contactFrame).width="100%";
+			 
+			}
+
+			</script>
 		
-		<input type="submit" class="keepInTouch" value="Keep in touch" onmouseover="show('blk1');" onmouseout="hide('blk1');" style="border:none">
-    	</input>
-    
-		<iframe class="block" id="blk1" src='contact/form.php'" onmouseover="show(this.id);" onmouseout="hide(this.id);" frameborder='0' width='100%' height='500px' style="border: 1px solid red;"></iframe>
+			<input type="submit" class="sectionTitle" value="Keep in touch" onmouseover="show('contactFrame');" onmouseout="hide('contactFrame');">
+	    	</input>
+	    
+			<iframe class="block" id="contactFrame" src='contact/form.php' onmouseover="show(this.id);" onmouseout="hide(this.id);" frameborder='0' width='100%' height='100%' scrolling="no" style="border: 3px solid red;">
 
-		<form class="email" action="mailer.php" method="post">
-<p>Name:</p>
-<input type="text" name="name" />
-<p>E-mail:</p>
-<input type="text" name="email" />
-<p>Subject:</p>
-<input type="text" name="subject" />
-<p>Message:</p>
-<textarea name="message"></textarea></p>
-<input class="send" type="submit" value="Send">
-</form>
+				<p> Follow me  </p>
+
+		
+
+			</iframe>
+
+		
 
 
+		<p> Follow me  </p>
 
-
-
-
-
-		<form method="post">
-
-  			<label for="subscriber_email">
-			</label>
-			
-			<input id="subscriberEmail" type="email" placeholder="Your e-mail, please"></input>
-
-			<input type="submit" class="button" value="Send"></input>
-
-		</form>
-
-		</div>
-			<p> Follow me  </p>
-
-<div class="socialMedia">
+		<div class="socialMedia">
 			
 			<a href="#"><img src="images/icon_dribbble.png"></a>
 			<a href="#"><img src="images/icon_twitter.png"></a>
@@ -321,33 +328,12 @@ function hide(blk1){
 	
 
 
-<div class='form_description'>
-
-</div>
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
 	<!-- This is a back-to-top button -->
 	<a href="#0" class="cd-top">&uarr;</a>
 
 	<footer>
 
-		<p class="copyright"> © A. HIPSTERSON 2010-2014 </p>
+		<p class="copyright"> © Tanja Oberst 2015 </p>
 
 	</footer>
 	
