@@ -32,36 +32,29 @@ function phpfmg_form( $sErr = false ){
 <ol class='phpfmg_form' >
 
 <li class='field_block' id='field_0_div'><div class='col_label'>
-	<label class='form_field'></label> <label class='form_required' ></label> </div>
+	<label class='form_field'>Your email adress</label><label class='form_required' ></label> </div>
 	<div class='col_field'>
-	<input type="text" name="field_0"  id="field_0" value="Your email adress""<?php  phpfmg_hsc("field_0", ""); ?>" class='text_box'>
-	<div id='field_0_tip' class='instruction'>Your email address</div>
+    <div id='field_0_tip' class='instruction'></div>
+	<input type="text" name="field_0"  id="field_0" value="""<?php  phpfmg_hsc("field_0", ""); ?>" class='text_box'>
+	
 	</div>
 </li>
 
 <li class='field_block' id='field_1_div'><div class='col_label'>
-	<label class='form_field'>Message</label> <label class='form_required' >*</label> </div>
+	<label class='form_field'>Your message</label> <label class='form_required'></label> </div>
+    <div id='field_1_tip' class='instruction'></div>
 	<div class='col_field'>
 	<textarea name="field_1" id="field_1" rows=4 cols=25 class='text_area'><?php  phpfmg_hsc("field_1"); ?></textarea>
-
-	<div id='field_1_tip' class='instruction'>Your message</div>
 	</div>
 </li>
-
-
-<li class='field_block' id='phpfmg_captcha_div'>
-	<div class='col_label'></div><div class='col_field'>
-	<?php phpfmg_show_captcha(); ?>
-	</div>
-</li>
-
 
             <li>
             <div class='col_label'>&nbsp;</div>
             <div class='form_submit_block col_field'>
 	
 
-                <input type='submit' value='Submit' class='form_button'>
+                <input type='submit' value='Submit' class='form_button' style="background:#469AB7; border: 0; color: #fff; font-family: 'Signika', sans-serif;
+    font-size: 18px;">
 
 				<div id='err_required' class="form_error" style='display:none;'>
 				    <label class='form_error_title'>Please check the required fields</label>
@@ -83,15 +76,7 @@ function phpfmg_form( $sErr = false ){
 </div>
 <!-- end of form container -->
 
-<p> Follow me  </p>
-<div class="socialMedia">
-            
-            <a href="#"><img src="images/icon_dribbble.png"></a>
-            <a href="#"><img src="images/icon_twitter.png"></a>
-            <a href="#"><img src="images/icon_linkedin.png"></a>
 
-</div>
-<!-- end of social media icons -->
 
 
 <!-- [Your confirmation message goes here] -->
@@ -129,18 +114,15 @@ body{
     width: 100%;
 }
 
-body{
-    font-family : Verdana, Arial, Helvetica, sans-serif;
-    font-size : 13px;
-    color : #474747;
-    background-color: transparent;
-}
+
 
 select, option{
     font-size:13px;
 
 
 }
+
+
 
 ";
 }; // if
