@@ -1,3 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Signika:400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600);
+
+
 /* The * selector applies styling for ALL selectors,
 	Mostly used for reseting and such */
 
@@ -22,11 +26,11 @@
 html, body {
 	width: 100%;
 	height: 100%;
-	font-family: 'Opensans', serif;
+	font-family: 'Open Sans', sans-serif !important;
 	font-size: 16px;
 	line-height: 28px;
 	font-weight: 400;
-	color: #445055;
+	color: #;
 }
 	/* General styling for all headlines */
 h1, h2, h3, h4, h5, h6 {
@@ -131,7 +135,7 @@ nav li {
 
 nav li a {
 	display: block;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	color: #ffffff;
@@ -141,7 +145,7 @@ nav li a {
 
 .navshow{
 	display: block;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	color: #435058;
@@ -627,8 +631,8 @@ footer p {
 
 	
 	.container {
-		width: 100%;
-		margin: 0 auto;
+	width: 100%;
+	margin: 0 auto;
 	}
 
 
@@ -641,7 +645,7 @@ footer p {
 	}
 
 	h1 a {
-		color: #445055;
+	color: #445055;
 	}
 
 	.wrapper_logo {
@@ -660,9 +664,9 @@ footer p {
 	}
 
 	.bg {
-	  width: 100%;
-	  height: 220px;
-	  opacity: 1;
+	 width: 100%;
+	 height: 220px;
+	 opacity: 1;
 	}
 
 
@@ -690,6 +694,7 @@ footer p {
 
 	.avatar {
 		padding-top:10%;
+		width: 40%;
 	}
 
 

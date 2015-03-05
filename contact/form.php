@@ -114,7 +114,9 @@ body{
     width: 100%;
 }
 
-
+body{
+    font-family: Verdana, Helvetica, Arial;
+}
 
 select, option{
     font-size:13px;
@@ -173,7 +175,7 @@ ol.phpfmg_form li{
 }
 
 .text_box, .text_area, .text_select {
-    width:340px;
+    width:300px;
     text-align: center;
 }
 
