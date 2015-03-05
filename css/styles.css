@@ -178,6 +178,7 @@ nav li a:hover {
 	text-align: center;
 	position: relative; /* Must be specified for centering the .introContainer */
 	overflow: scroll;
+	background-color: #445055;
 }
 
 .introContainer {
