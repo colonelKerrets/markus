@@ -139,7 +139,6 @@ nav li a {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	color: #ffffff;
-	
 	padding: 25px 0 30px 0px;
 }
 
@@ -400,12 +399,12 @@ figcaption {
 
 }
 
-figcaption .textVerticalAlign {
+/*figcaption .textVerticalAlign {
 	position: relative;
   	top: 50%;
   	transform: translateY(-50%);
   	padding: 0 16% 0 16%;  	
-}
+}*/
 
 
 figcaption:hover {
@@ -647,28 +646,45 @@ footer p {
 	}
 
 	.wrapper_logo {
+	clear: both;
 	width: 100%;
-	display: block;
-	padding: 6% 16% 0% 16% ;
+	padding: 10px 20px 0% 20px ;
 	margin: 0 auto;
 	}
 
+	.logo {
+	width: 160px;
+	margin: 0 auto;
+
+	}
 
 	nav {
 	width: 100%;
-	display: inline;
+	display: inline-block;
 	margin: auto 0;
-	padding: 0 10%;
+	padding: 0 ;
+	}
+
+
+
+	.wrapperNav {
+	min-width: 280px;
+	width: 60%;
+	margin: 0 auto;
+	}
+
+	.navshow{
+	padding: 0;
 	}
 
 	.bg {
 	 width: 100%;
-	 height: 24vh;
+	 height: 90px;
 	 opacity: 1;
 	}
 
 
-	
+
 
 	/*************************** LARGE IMAGE *************************/
 
@@ -701,8 +717,8 @@ footer p {
 	}
 
 	.intro {
-		font-size: 36px;
-		line-height: 42px;
+		font-size: 2em;
+		line-height: 1em;
 		color: #ffffff;
 	}
 
@@ -737,31 +753,13 @@ footer p {
 	}
 
 	section p {
-		width: 70%;
-		margin: 30px auto;
+		width: 100%;
+		margin: 0 auto;
 		font-size: 18px;
+		border: red solid 1px;
+		text-align:justify;
 	}
 
-	.socialMedia {
-		margin: 30px auto;
-		width: 180px;
-	}
-
-	.socialMedia a {
-		margin-right: 20px;
-	}
-
-	.socialMedia a img {
-		opacity: 0.6;
-	}
-
-	.socialMedia a img:hover {
-		opacity: 1;
-	}
-
-	.socialMedia a:last-child {
-		margin-right: 0px;
-	}
 
 
 
@@ -911,7 +909,7 @@ figcaption {
 
 	footer {
 		width: 100%;
-		height: 100px;
+		height: 400px;
 		text-align: center;
 		background: #445055;
 	}
@@ -995,7 +993,7 @@ figcaption {
 
 	nav li a {
 	display: block;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	color: #ffffff;
