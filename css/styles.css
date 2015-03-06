@@ -474,19 +474,27 @@ div #frmFormMailContainer{
 
 footer {
 	width: 100%;
-	height: 300px;
+	height: 200px;
 	text-align: center;
 	background: #445055;
+	padding: 50px 0;
 }
 
 /* The text in the footer */
 footer p {
-	padding: 35px 0;
+	padding: 0;
 	margin-top: 0;
 	margin-bottom: 0;
 	color: #ffffff;
+	font-size: 0.8em;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+}
+
+.copyright {
+	text-transform: none;
+	letter-spacing: 2px;
+	opacity: 0.5;
 }
 
 /************************** BACK TO TOP BUTTON *************************/
