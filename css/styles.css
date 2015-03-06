@@ -36,29 +36,19 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
 	font-family:'Signika', sans-serif;
 	font-weight: 800;
-	letter-spacing: 2px;
 	text-transform: uppercase;
 }
 	/* Styling for paragraphs */
 p {
 	width: 100%;
-	margin: 10% auto;
+	margin: 10% auto; 
 }
 	/* A simple little "hack" to make all images responsive */
 img {
 	max-width: 100%; 
 }
 
-.containerSvg {
-    width: 20%;
-    height: auto;
-    padding-top: 48%;
-    position: relative;
-    display: inline;
-    float: left;
-    border: 1px solid green;
-}
- 
+
 
 /*************************** HEADER *************************/
 
@@ -71,26 +61,12 @@ header {
 
 /*  To get everything centered, we put the content in this tag. 
 	Margin: 0 auto; does the magic */
+
 .container {
-	width: 1000px;
+	max-width: 1000px;
 	margin: 0px auto;
 }
 
-h1 {
-	font-size: 24px;
-	line-height: 32px;
-	float: left;
-	width: 60%;
-	padding: 5px 0;
-}
-
-h1 a {
-	color: #445055;
-}
-
-h1:hover {
-
-}
 
 /*  Header fade in */
 .bg {
@@ -148,14 +124,14 @@ nav li a {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	color: #435058;
-	height: 75px;
+	height: 36px;
 	padding: 25px 0 30px 0px;
 }
 
 /*  When we hover over the links, we want a different color
 	and a border at the bottom  */
 nav li:hover {
-	border-bottom: 2px solid #469AB7;
+	
 }
 
 nav li a:hover {
@@ -185,6 +161,7 @@ nav li a:hover {
 	/* This little "hack" makes it perfectly centered within its parent tag */
 	margin: auto;
   	position: absolute;
+  	padding-top: 4%;
   	top: -22%; left: 0; bottom: 0; right: 0;
 }
 
@@ -235,7 +212,7 @@ h2 .highlighted {
 }
 /*************************** ABOUT SECTION *************************/
 
-/* Styling for all sections except ABOUT */
+/* Styling for all sections */
 #about {
 	clear: both;
 	margin: 0px auto;
@@ -248,6 +225,7 @@ h2 .highlighted {
 	background-color:  #eeeeee;
 	width: 100%;
 	padding: 10% 0 0% 0;
+	overflow: visible;
 }
 
 #contact {
@@ -260,36 +238,43 @@ h2 .highlighted {
 .metaInformation {
 	clear: both;
 	margin: 0px auto;
-	width: 100%;
-	max-width: 500px;
+	max-width: 700px;
 	color: #435058;
 	text-align: center;
 	padding: 6%;
+	letter-spacing: 0.02em;
+	line-height: 1.6em;
+	border: 1px solid green;
 }
+
+iframe {
+	margin: 0 auto;
+	height: 500px;
+	border: 1px solid red;
+}
+ 
 
 
 .sectionTitle {
-	font-size: 46px;
-	line-height: 52px;
-	letter-spacing: 2px;
+	font-size: 3em;
+	line-height: 1em;
 	text-transform: uppercase;
 	font-family:'Signika', sans-serif;
 	font-weight: 800;
-	letter-spacing: 2px;
 	text-transform: uppercase;
+	overflow: visible;
+	border: solid red;
 }
 
 #contact .sectionTitle {
-	font-size: 46px;
-	line-height: 52px;
-	letter-spacing: 2px;
+	font-size: 3em;
+	line-height: 1em;
+	text-transform: uppercase;
+	font-family:'Signika', sans-serif;
+	font-weight: 800;
 	text-transform: uppercase;
 	margin-top: 20px;
 	padding-bottom: 50px;
-	font-family:'Signika', sans-serif;
-	font-weight: 800;
-	letter-spacing: 2px;
-	text-transform: uppercase;
 	background:none;
 	border: none;
 }
@@ -378,7 +363,7 @@ h2 .highlighted {
 	height: auto;
 	position: relative;
 	margin: 0px auto;
-	padding: 8%;
+	padding: 6%;
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
 	-webkit-margin-start: 0;
@@ -510,6 +495,7 @@ button a,  {
 button:hover {
 }
 
+
 #subscriberEmail{
 	width: auto;
 	height: 50px;
@@ -563,7 +549,7 @@ footer p {
   /* image replacement properties */
   overflow: hidden;
   white-space: nowrap;
-  background: #95C763;
+  background: #667277;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;
@@ -585,7 +571,7 @@ footer p {
   opacity: .5;
 }
 .no-touch .cd-top:hover {
-  background-color: #95C763;
+  background-color: #469AB7;
   opacity: 1;
 }
 
@@ -619,18 +605,11 @@ footer p {
 	margin: 0 auto;
 	}
 
-
-	h1 {
-	font-size: 18px;
-	line-height: 18px;
-	width: 100%;
-	padding: 0;
-	text-align: center;
+	.containerContactForm {
+	max-width: 320px;
+	margin: 0px auto;
 	}
 
-	h1 a {
-	color: #445055;
-	}
 
 	.wrapper_logo {
 	clear: both;
@@ -684,16 +663,10 @@ footer p {
 		position: relative;
 	}
 
-	.introContainer {
-		height: 365px;
-		width: 96%;
-		margin: auto;
-	  	position: absolute;
-	  	top: 0; left: 0; bottom: 0; right: 0;
-	}
+	
 
 	.avatar {
-		padding-top:10%;
+		padding-top:8%;
 		width: 40%;
 	}
 
@@ -723,7 +696,7 @@ footer p {
 
 	/*************************** ABOUT SECTION *************************/
 
-	section {
+	/*section {
 		clear: both;
 		margin: 0px auto;
 		padding: 75px 0;
@@ -735,19 +708,17 @@ footer p {
 		letter-spacing: 2px;
 		text-transform: uppercase;
 		margin: 0;
+		overflow: visible;
 		
 	}
 
 	section p {
 		width: 100%;
 		margin: 0 auto;
-		font-size: 18px;
-		border: red solid 1px;
+		font-size: 1em;
 		text-align:center;
-		padding: 1em;
-	}
-
-
+		padding: 2em;
+	}*/
 
 
 	/*************************** WORK SECTION *************************/
@@ -774,73 +745,7 @@ footer p {
 
 	/*************************** OTHER PROJECTS ***************************/
 
-	.projects {
-		width: 100%;
-		float: none;
-	}
-
-	.projects img {
-		width: 200;
-		height: 200px;
-	}
-
-	.projects figure {
-		display: block;
-		float: left;
-		width: 200px;
-		height: 200px;
-		position: relative;
-		padding: 0;
-		-webkit-margin-before: 0;
-		-webkit-margin-after: 0;
-		-webkit-margin-start: 0;
-		-webkit-margin-end: 0;
-		margin-right: 0px;
-		margin-left: 0px;
-	}
-
-	.projects figcaption {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		bottom: 0;
-		left: 0;
-		padding: 20% 10%;
-		background: rgba(0, 0, 0, 0.7);
-	    color: #D0D0D0;
-	    opacity: 0;
-	}
-
-	.projects figcaption:hover {
-		opacity: 1;
-		cursor: pointer;
-	}
-
-	.projects figcaption h3 {
-	    margin: 10px;
-	    padding: 0;
-	    color: #fff;
-	    font-size: 24px;
-	}
-	 
-	.projects figcaption a {
-	    text-align: center;
-	    padding: 0px;
-	    display: block;
-	    background: none;
-	    color: #fff;
-	    margin-top: 0px;
-	}
-
-	.projects figure:nth-child(2),
-	.projects figure:nth-child(4) {
-		margin-right: 0px;
-	}
-
-	.projects figure:nth-child(3),
-	.projects figure:nth-child(4) {
-		margin-top: 0px;
-	}
+	
 
 	/*************************** FOOTER SECTION *************************/
 
@@ -880,21 +785,6 @@ footer p {
 	.container {
 	width: 100%;
 	margin: 0 auto;
-	}
-
-
-
-	h1 {
-	font-size: 24px;
-	line-height: 24px;
-	width: 100%;
-	text-align: center;
-	padding: 2px 0;
-	
-	}
-
-	h1 a {
-	color: #445055;
 	}
 
 
@@ -974,17 +864,10 @@ footer p {
 		position: relative;
 	}
 
-	.introContainer {
-		height: 365px;
-		margin: auto;
-	  	position: absolute;
-	  	top: 0; left: 0; bottom: 0; right: 0;
-	}
-
 
 	.intro {
-		font-size: 36px;
-		line-height: 44px;
+		font-size: 2.6em;
+		line-height: 1.0em;
 		color: #ffffff;
 	}
 
@@ -1001,53 +884,7 @@ footer p {
 
 	/*************************** ABOUT SECTION *************************/
 
-	section {
-		clear: both;
-		margin: 0px auto;
-		padding: 125px 0;
-		width: 100%;
-		text-align: center;
-	}
-
-	.sectionTitle {
-		letter-spacing: 2px;
-		text-transform: uppercase;
-		margin: 0;
-	}
-
-	p {
-		width: 70%;
-		margin: 0 auto;
-	}
-
-	.socialMedia {
-		margin: 50px auto 0;
-		width: 180px;
-	}
-
-	.socialMedia a {
-		margin-right: 20px;
-	}
-
-	.socialMedia a img {
-		opacity: 0.6;
-	}
-
-	.socialMedia a img:hover {
-		opacity: 1;
-	}
-
-	.socialMedia a:last-child {
-		margin-right: 0px;
-	}
-
-
-	.separator {
-		width: 100%;
-		margin: 0 auto;
-		border: 1px solid #D8D8D8;
-		clear: both;
-	}
+	
 
 	/*************************** WORK SECTION *************************/
 
@@ -1105,76 +942,6 @@ footer p {
 
 	/*************************** OTHER PROJECTS ***************************/
 
-	.projects {
-		clear: both;
-		width: 490px;
-		float: none;
-		margin: 20px auto;
-		overflow: hidden;
-	}
-
-	.projects img {
-		width: 235px;
-		height: 235px;
-	}
-
-	.projects figure {
-		display: block;
-		float: left;
-		width: 235px;
-		height: 235px;
-		position: relative;
-		padding: 0;
-		-webkit-margin-before: 0;
-		-webkit-margin-after: 0;
-		-webkit-margin-start: 0;
-		-webkit-margin-end: 0;
-		margin-right: 20px;
-		margin-left: 0px;
-	}
-
-	.projects figcaption {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		bottom: 0;
-		left: 0;
-		padding: 25% 10%;
-		background: rgba(0, 0, 0, 0.7);
-	    color: #D0D0D0;
-	    opacity: 0;
-	}
-
-	.projects figcaption:hover {
-		opacity: 1;
-		cursor: pointer;
-	}
-
-	.projects figcaption h3 {
-	    margin: 10px;
-	    padding: 0;
-	    color: #fff;
-	    font-size: 24px;
-	}
-	 
-	.projects figcaption a {
-	    text-align: center;
-	    padding: 0px;
-	    display: block;
-	    background: none;
-	    color: #fff;
-	    margin-top: 0px;
-	}
-
-	.projects figure:nth-child(2),
-	.projects figure:nth-child(4) {
-		margin-right: 0px;
-	}
-
-	.projects figure:nth-child(3),
-	.projects figure:nth-child(4) {
-		margin-top: 20px;
-	}
 
 	/*************************** FOOTER SECTION *************************/
 

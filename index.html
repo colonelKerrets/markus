@@ -182,7 +182,6 @@
 
 					</figcaption>
 
-				
 						<picture>
 							<source srcset="images/logos@2x.jpg" media="(min-width: 960px)">
 							<source srcset="images/logos.jpg" media="(min-width: 640px)">
@@ -248,7 +247,8 @@
 
 
 	<section id="contact">
-		
+	<div class="containerContactForm">
+
 		<div class="metaInformation">
 
 			<h2 class="sectionTitle"> Say Hello! </h2>
@@ -276,17 +276,18 @@
 			</script>
 			
 			<div>
-			<input type="image" src="images/icon_email.svg" style="width:40px" type="button" onmouseover="show('contactFrame');">
-		    <input type="image" src="images/icon_twitter.svg" style="width:40px" type="button" onmouseover="hide('contactFrame');">
-		    <input type="image" src="images/icon_linkedin.svg" style="width:40px" type="button" onmouseover="hide('contactFrame');">
-		    <input type="image" src="images/icon_dribbble.svg" style="width:40px" type="button" onmouseover="hide('contactFrame');">
+			<img src="images/icon_email.svg" style="width:40px" type="button" onmouseover="show('contactFrame');">
+		    <img src="images/icon_twitter.svg" style="width:40px" type="button" onmouseover="hide('contactFrame');">
+		    <img src="images/icon_linkedin.svg" style="width:40px" type="button" onmouseover="hide('contactFrame');">
+		    <img src="images/icon_dribbble.svg" style="width:40px" type="button" onmouseover="hide('contactFrame');">
 			</div>
 	    
 			<br>
 			
-			<iframe class="block" id="contactFrame" src='contact/form.php' onmouseover="show(this.id);" onmouseout="hide(this.id);" frameborder='0' allowTransparency="true" width='100%' height='300px' scrolling="no" style="background:#ffffff;border:1px solid #dddddd"></iframe>
+			<iframe class="block" id="contactFrame" src='contact/form.php' onmouseover="show(this.id);" onmouseout="hide(this.id);" frameborder='0' allowTransparency="true" width='100%' height='300px' scrolling="no" ></iframe>
 				
 		</div>
+	</div>	
 	</section> <!-- End of the Contact section -->
 
 

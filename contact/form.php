@@ -53,8 +53,8 @@ function phpfmg_form( $sErr = false ){
             <div class='form_submit_block col_field'>
 	
 
-                <input type='submit' value='Submit' class='form_button' style="background:#469AB7; border: 0; color: #fff; font-family: 'Signika', sans-serif;
-    font-size: 18px;">
+                <input type='submit' value='Send' class='form_button' style="background:#445055; border: 0; color: #fff; font-family: 'Signika', sans-serif;
+    font-size: 18px;" onMouseOver=this.style.backgroundColor='#469AB7'; onMouseOut=this.style.backgroundColor='#445055'>
 
 				<div id='err_required' class="form_error" style='display:none;'>
 				    <label class='form_error_title'>Please check the required fields</label>
@@ -111,7 +111,8 @@ function phpfmg_form_css(){
 if( !$formOnly ){
     echo"
 body{
-    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 body{
@@ -175,7 +176,7 @@ ol.phpfmg_form li{
 }
 
 .text_box, .text_area, .text_select {
-    width:300px;
+    width:260px;
     text-align: center;
 }
 
@@ -189,15 +190,14 @@ ol.phpfmg_form li{
 }
 
 .form_error{
-    background-color: #F4F6E5;
-    border: 1px dashed #ff0000;
+    
     padding: 10px;
     margin-bottom: 10px;
 }
 
 .form_error_highlight{
-    background-color: #F4F6E5;
-    border-bottom: 1px dashed #ff0000;
+    
+    
 }
 
 div.instruction_error{
@@ -226,9 +226,10 @@ hr.sectionbreak{
 }
 
 #frmFormMailContainer input[type="submit"]:hover{
-    background-color: #E4F0F8;
+    background-color: #dddddd;
 
 }
+
 
 
 <?php phpfmg_text_align();?>    
