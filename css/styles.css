@@ -138,6 +138,12 @@ nav li a:hover {
 	color: #469AB7;
 }
 
+.opacityButton:hover{
+opacity: 0.8;
+
+}
+
+
 /*************************** LARGE IMAGE *************************/
 
 
@@ -244,13 +250,12 @@ h2 .highlighted {
 	padding: 6%;
 	letter-spacing: 0.02em;
 	line-height: 1.6em;
-	border: 1px solid green;
+
 }
 
 iframe {
 	margin: 0 auto;
 	height: 500px;
-	border: 1px solid red;
 }
  
 
@@ -263,7 +268,6 @@ iframe {
 	font-weight: 800;
 	text-transform: uppercase;
 	overflow: visible;
-	border: solid red;
 }
 
 #contact .sectionTitle {
@@ -313,12 +317,11 @@ iframe {
 	clear: both;
 }
 
-/* Social Media Icons */
+/* Social Media Icons NOT USED TODO */
 
 .svg-icon {
   width: 3em;
   height: 3em;
-  border: red 1px solid;
 }
 
 .svg-icon path,
@@ -396,11 +399,14 @@ figcaption {
 .featured figcaption a {
     text-align: center;
     padding: 0px;
-    display: block;
-    color: #445055;
-    margin-top: 10px;
+    color: #fd6745;
     text-decoration: underline;
 }
+.featured figcaption a:hover{
+	color: #469AB7;
+}
+
+
 
 .featured figure:nth-child(2),
 .featured figure:nth-child(4) {
@@ -415,57 +421,7 @@ figcaption {
 
 /*************************** OTHER PROJECTS ***************************/
 
-/* Styling for the smaller projects to the right */
-.projects {
-	width: 50%;
-	float: left;
-}
 
-.projects figure {
-	display: block;
-	float: left;
-	width: 235px;
-	height: 235px;
-	position: relative;
-	padding: 0;
-	-webkit-margin-before: 0;
-	-webkit-margin-after: 0;
-	-webkit-margin-start: 0;
-	-webkit-margin-end: 0;
-	margin-right: 10px;
-	margin-left: 10px;
-}
-
-/* This is the Title of the Project */
-.projects figcaption h3 {
-    margin: 10px;
-    padding: 0;
-    color: #fff;
-    font-size: 24px;
-}
-
-/* This is the Read More link */
-.projects figcaption a {
-    text-align: center;
-    padding: 0px;
-    display: block;
-    background: none;
-    color: #fff;
-    margin-top: 10px;
-}
-
-/*  This is for making sure the margins is right. Since we specified margins for all 
-	.projects above, we need to remove some of the margins to make it align correctly.
-	with the "nth-child" selector, we can specify which item we want to style */
-.projects figure:nth-child(2),
-.projects figure:nth-child(4) {
-	margin-right: 0px;
-}
-
-.projects figure:nth-child(3),
-.projects figure:nth-child(4) {
-	margin-top: 20px;
-}
 
 /*************************** CONTACT SECTION *************************/
 
@@ -742,9 +698,6 @@ footer p {
 	border: 1px solid #e2e2e2;
 }
 
-
-	/*************************** OTHER PROJECTS ***************************/
-
 	
 
 	/*************************** FOOTER SECTION *************************/
@@ -936,7 +889,6 @@ footer p {
 	    padding: 0px;
 	    display: block;
 	    background: none;
-	    color: #469AB7;
 	    margin-top: 10px;
 	}
 
