@@ -6,7 +6,7 @@ if( !defined('FormmailMakerFormLoader') ){
     # This block must be placed at the very top of page.
     # --------------------------------------------------
 	require_once( dirname(__FILE__).'/form.lib.php' );
-    phpfmg_display_form();
+    phpfmg_display_form( "Tanja Oberst – UX/UI designer", "design, UX, UI, art-direction, user testing, coding, iOS, mobile, Hyper Island, San Francisco", "I create unique experiences between user and technology. UX & UI design – beautiful simple and concise." );
     # --------------------------------------------------
 };
 

@@ -5,7 +5,7 @@
 # -----------------------------------------------------------------------------
 
 
-define( 'PAYPAL_ID' , '' ); // Put donation ID here to disable the bottom backlink
+define( 'PAYPAL_ID' , '96K12324C3450150P' ); // Put donation ID here to disable the bottom backlink
 
 define( 'PHPFMG_TO' , 'hello@tanjaoberst.com' );
 define( 'PHPFMG_REDIRECT', '' );
