@@ -30,7 +30,6 @@ html, body {
 	font-size: 16px;
 	line-height: 28px;
 	font-weight: 400;
-	color: #;
 }
 	/* General styling for all headlines */
 h1, h2, h3, h4, h5, h6 {
@@ -97,10 +96,12 @@ header {
 /* Styling for the navigation */
 
 
+
 nav  {
 	width: 40%;
-	margin-right: 2%;
+	margin: 0 2%;
 	float: right;
+	padding: 0;
 }
 
 nav li {
@@ -117,7 +118,6 @@ nav li a {
 	letter-spacing: 2px;
 	color: #ffffff;
 	padding: 25px 0 30px 0px;
-	border: 1px solid red;
 }
 
 .navshow{
@@ -131,9 +131,7 @@ nav li a {
 
 /*  When we hover over the links, we want a different color
 	and a border at the bottom  */
-nav li:hover {
-	
-}
+
 
 nav li a:hover {
 	color: #469AB7;
@@ -154,13 +152,13 @@ opacity: 0.8;
 	width: 100%; /* 100% of the browser */
 	height: 100vh; /* = 100% of the browser size */
 	padding: 0px;
-	background: url("../images/header_image_4.jpg"); /* Here we specify the background image */
+	background: url("../images/heroImage.jpg"); /* Here we specify the background image */
 	background-position: center top; /* With this property, we can specify the position of the background image */
 	background-repeat: no-repeat;
 	text-align: center;
 	position: relative; /* Must be specified for centering the .introContainer */
 	overflow: scroll;
-	background-color: #445055;
+	background-color: #455156;
 }
 
 .introContainer {
@@ -169,15 +167,17 @@ opacity: 0.8;
 	margin: auto;
   	position: absolute;
   	padding-top: 4%;
-  	top: -22%; left: 0; bottom: 0; right: 0;
+  	top: -32%; left: 0; bottom: 0; right: 0;
+
 }
+
 
 /* This is the Profile picture */
 
 
 .avatar {
-
-
+	max-width: 400px;
+	margin: 0 auto;
 }
 
 .wrapper_logo {
@@ -517,12 +517,11 @@ footer p {
 
 	nav {
 	width: 100%;
-	display: inline-block;
+	clear: both;
+	display: inline;
 	margin: auto 0;
 	padding: -4% ;
 	}
-
-
 
 
 	.wrapperNav {
@@ -546,31 +545,20 @@ footer p {
 
 	/*************************** LARGE IMAGE *************************/
 
-	.largeImage {
-		width: 100%;
-		height: 100vh;
-		padding: 0px;
-		background: url("../images/header_image_4.jpg");
-		background-position: center;
-		text-align: center;
-		position: relative;
-	}
+
 
 	
-
-	.avatar {
-		padding-top:8%;
-		width: 40%;
-	}
-
-
 	.intro {
 		font-size: 2em;
 		line-height: 1em;
 		color: #ffffff;
 	}
 
-
+	.avatar {
+	max-width: 200px;
+	margin: 0 auto;
+	padding-top: 10%;
+}
 
 	.ampersand {
 		font-family: Baskerville, serif;
@@ -719,17 +707,21 @@ footer p {
 		width: 100%;
 		height: 100vh;
 		padding: 0px;
-		background: url("../images/header_image_4.jpg");
+		background: url("../images/heroImage.jpg");
 		background-position: center top;
+		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
+		background-color: #455156;
 	}
+
 
 
 	.intro {
 		font-size: 2.6em;
 		line-height: 1.0em;
 		color: #ffffff;
+
 	}
 
 	.ampersand {

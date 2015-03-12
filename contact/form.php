@@ -32,7 +32,7 @@ function phpfmg_form( $sErr = false ){
 <ol class='phpfmg_form' >
 
 <li class='field_block' id='field_0_div'><div class='col_label'>
-	<label class='form_field'>Your email adress</label><label class='form_required' ></label> </div>
+	<label class='form_field'>Your email address</label><label class='form_required' ></label> </div>
 	<div class='col_field'>
     <div id='field_0_tip' class='instruction'></div>
 	<input type="text" name="field_0"  id="field_0" value="""<?php  phpfmg_hsc("field_0", ""); ?>" class='text_box'>
