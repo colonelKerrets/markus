@@ -27,7 +27,7 @@ html, body {
 	width: 100%;
 	height: 100%;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 28px;
 	font-weight: 400;
 }
@@ -120,6 +120,8 @@ nav li a {
 	padding: 25px 0 30px 0px;
 }
 
+
+
 .navshow{
 	display: block;
 	font-family: 'Open Sans', sans-serif;
@@ -166,8 +168,8 @@ opacity: 0.8;
 	/* This little "hack" makes it perfectly centered within its parent tag */
 	margin: auto;
   	position: absolute;
-  	padding-top: 4%;
-  	top: -32%; left: 0; bottom: 0; right: 0;
+  	padding-top: 2%;
+  	top: -60%; left: 0; bottom: 0; right: 0;
 
 }
 
@@ -178,19 +180,21 @@ opacity: 0.8;
 .avatar {
 	max-width: 400px;
 	margin: 0 auto;
+	padding-top: 6%;
+	
 }
 
 .wrapper_logo {
 	width: 12em;
-	margin: 1em;
+	padding: 1.1em 2em;
 	float: left;
 }
 
 
 .logo {
+	width: 160px;
 	margin: 0 auto;
-
-	}
+}
 
 .logoWhite path {
 	fill: #ffffff;
@@ -212,7 +216,7 @@ opacity: 0.8;
 	font-weight: normal;
 }
 
-/* To change color of "Mobile Experiences" */ 
+/* To change color of headlines */ 
 .highlighted {
 	color: #469AB7;
 }
@@ -220,13 +224,27 @@ opacity: 0.8;
 h2 .highlighted {
 	color: #469AB7;
 }
+
+.tagline {
+	color: #fff;
+	margin: -2% auto;
+	width: 100%;
+	padding: 0 8%;
+	font-weight: 300;
+	letter-spacing: 0.06em;
+	line-height: 1.6em;
+	opacity: 0.8;
+	text-align: center;
+
+}
+
 /*************************** ABOUT SECTION *************************/
 
 /* Styling for all sections */
 #about {
 	clear: both;
 	margin: 0px auto;
-	padding: 10% 0 10% 0;
+	padding: 6% 0 10% 0;
 	width: 100%;
 }
 
@@ -234,7 +252,7 @@ h2 .highlighted {
 	clear: both;
 	background-color:  #eeeeee;
 	width: 100%;
-	padding: 10% 0 0% 0;
+	padding-bottom: 6%;
 	overflow: visible;
 }
 
@@ -250,10 +268,10 @@ h2 .highlighted {
 	margin: 0px auto;
 	max-width: 700px;
 	color: #435058;
-	text-align: center;
-	padding: 6%;
+	padding: 0 6%;
 	letter-spacing: 0.02em;
 	line-height: 1.6em;
+	text-align: center;
 
 }
 
@@ -270,22 +288,15 @@ iframe {
 	text-transform: uppercase;
 	font-family:'Signika', sans-serif;
 	font-weight: 800;
+	padding: 6% 0;
 	text-transform: uppercase;
 	overflow: visible;
+	color: #435058;
+	text-align: center;
+
 }
 
-#contact .sectionTitle {
-	font-size: 3em;
-	line-height: 1em;
-	text-transform: uppercase;
-	font-family:'Signika', sans-serif;
-	font-weight: 800;
-	text-transform: uppercase;
-	margin-top: 20px;
-	padding-bottom: 50px;
-	background:none;
-	border: none;
-}
+
 
 
 
@@ -319,7 +330,7 @@ iframe {
 /* Styling for when we hover over the image */
 figcaption {
 	position: relative;
-	width: 100%;
+	width: 70%;
 	margin: 0px auto;
 	height: auto;
     color: #445055;
@@ -515,6 +526,17 @@ footer p {
 
 
 
+
+.logo {
+	margin: 0 auto;
+
+	}
+
+.logoWhite path {
+	fill: #ffffff;
+	position: relative;
+}
+
 	nav {
 	width: 100%;
 	clear: both;
@@ -557,7 +579,8 @@ footer p {
 	.avatar {
 	max-width: 200px;
 	margin: 0 auto;
-	padding-top: 10%;
+	padding-top: 20%;
+	
 }
 
 	.ampersand {
@@ -609,7 +632,7 @@ footer p {
 
 .featured figure {
 	width: 96%;
-	margin: 4% auto;
+	margin: 0 auto;
 	padding: 10% 4% 4% 4%;
 	border: 1px solid #e2e2e2;
 }
@@ -638,20 +661,17 @@ footer p {
 
 
 	.wrapper_logo {
-	width: 30%;
+	width: 12em;
 	height: auto;
-	margin: 16px;
+	padding: 10px 20px 0% 20px ;
 	float: left;
 	}
 
-
-	.logoWhite {
-	width: 200px;	
+.logo {
+	width: 160px;
+	margin: 0 auto;
 	}
 
-	.logo{
-	width: 200px;
-	}
 
 	nav  {
 	width: 40%;
@@ -703,6 +723,11 @@ footer p {
 
 	/*************************** LARGE IMAGE *************************/
 
+	.avatar{
+	padding-top: 6%;
+	
+	}
+
 	.largeImage {
 		width: 100%;
 		height: 100vh;
@@ -734,6 +759,8 @@ footer p {
 	.highlighted {
 		color: #95C763;
 	}
+
+
 
 	/*************************** ABOUT SECTION *************************/
 
