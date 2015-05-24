@@ -114,7 +114,7 @@ nav li {
 nav li a {
 	display: block;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	color: #ffffff;
@@ -205,8 +205,8 @@ opacity: 0.8;
 
 .intro {
 	font-family: 'Signika', sans-serif;
-	font-weight: 600;
-	font-size: 3em;
+	font-weight: 800;
+	font-size: 2.6em;
 	line-height: 1.0em;
 	padding: 2%;
 	color: #ffffff;
@@ -237,7 +237,7 @@ h2 .highlighted {
 	font-size: 20px;
 	letter-spacing: 0.06em;
 	line-height: 1.6em;
-	opacity: 0.8;
+	opacity: 1;
 	text-align: center;
 
 }
@@ -289,11 +289,11 @@ iframe {
 
 
 .sectionTitle {
-	font-size: 3em;
+	font-size: 2.6em;
 	line-height: 1em;
 	text-transform: uppercase;
 	font-family:'Signika', sans-serif;
-	font-weight: 600;
+	font-weight: 800;
 	padding: 6% 0;
 	text-transform: uppercase;
 	overflow: visible;
@@ -581,7 +581,7 @@ footer p {
 
 	
 	.intro {
-	font-size: 2em;
+	font-size: 1.2em;
 	line-height: 1em;
 	color: #ffffff;
 	}
@@ -700,6 +700,7 @@ footer p {
 	nav li a {
 	display: inline;
 	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	color: #ffffff;
@@ -777,6 +778,8 @@ footer p {
 	
 
 	/*************************** WORK SECTION *************************/
+
+	
 
 	.portfolio {
 		margin-top: 50px;
