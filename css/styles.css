@@ -252,7 +252,7 @@ h2 .highlighted {
 	clear: both;
 	background-color:  #eeeeee;
 	width: 100%;
-	padding-bottom: 6%;
+	padding: 6% 0 10% 0;
 	overflow: visible;
 }
 
@@ -410,7 +410,7 @@ button:hover {
 
 footer {
 	width: 100%;
-	height: 300px;
+	height: auto;
 	text-align: center;
 	background: #445055;
 	padding: 2em 1em;
@@ -527,22 +527,26 @@ footer p {
 
 
 
-.logo {
-	margin: 0 auto;
+	.logo {
+		margin: 0 auto;
 
+		}
+
+	.logoWhite path {
+		fill: #ffffff;
+		position: relative;
 	}
-
-.logoWhite path {
-	fill: #ffffff;
-	position: relative;
-}
 
 	nav {
 	width: 100%;
 	clear: both;
 	display: inline;
 	margin: auto 0;
-	padding: -4% ;
+	padding: 0%;
+	}
+
+	nav li a {
+	padding: 0px;
 	}
 
 
@@ -571,27 +575,27 @@ footer p {
 
 	
 	.intro {
-		font-size: 2em;
-		line-height: 1em;
-		color: #ffffff;
+	font-size: 2em;
+	line-height: 1em;
+	color: #ffffff;
 	}
 
 	.avatar {
 	max-width: 200px;
 	margin: 0 auto;
-	padding-top: 20%;
+	padding-top: 26%;
 	
-}
+	}
 
 	.ampersand {
-		font-family: Baskerville, serif;
-		font-style: italic;
-		font-weight: normal;
+	font-family: Baskerville, serif;
+	font-style: italic;
+	font-weight: normal;
 		
 	}
 
 	.highlighted {
-		color: #95C763;
+	color: #95C763;
 	}
 
 	/*************************** ABOUT SECTION *************************/
@@ -667,7 +671,7 @@ footer p {
 	float: left;
 	}
 
-.logo {
+	.logo {
 	width: 160px;
 	margin: 0 auto;
 	}
