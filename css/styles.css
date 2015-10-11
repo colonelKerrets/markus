@@ -30,6 +30,7 @@ html, body {
 	font-size: 20px;
 	line-height: 28px;
 	font-weight: 300;
+	color: #001433;
 }
 	/* General styling for all headlines */
 h1, h2, h3, h4, h5, h6 {
@@ -128,7 +129,7 @@ nav li a {
 	font-family: 'Source Sans Pro', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	color: #435058;
+	color: #001433;
 	padding: 25px 0 30px 0px;
 }
 
@@ -137,7 +138,7 @@ nav li a {
 
 
 nav li a:hover {
-	color: #469AB7;
+	color: #0064FF;
 }
 
 .opacityButton:hover{
@@ -189,23 +190,30 @@ opacity: 0.8;
 	width: 12em;
 	padding: 1.1em 2em;
 	float: left;
+	border: solid, 1px, red;
 }
 
 
 .logo {
-	width: 160px;
+	color: #0064FF;
+	font-weight: 400;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1em;
+	letter-spacing: 2px;
 	margin: 0 auto;
+	text-transform: uppercase;
+	width: 300px;
 }
 
-.logoWhite path {
-	fill: #ffffff;
+.logoWhite {
+	color: #ffffff;
 	position: relative;
 }
 
 
 .intro {
-	font-family: 'Signika', sans-serif;
-	font-weight: 800;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
 	font-size: 2.6em;
 	line-height: 1.0em;
 	padding: 2%;
@@ -221,11 +229,11 @@ opacity: 0.8;
 
 /* To change color of headlines */ 
 .highlighted {
-	color: #469AB7;
+	color: #0064FF;
 }
 
 h2 .highlighted {
-	color: #469AB7;
+	color: #0064FF;
 }
 
 .tagline {
@@ -273,7 +281,7 @@ h2 .highlighted {
 	clear: both;
 	margin: 0px auto;
 	max-width: 700px;
-	color: #435058;
+	color: #001433;
 	padding: 0 6%;
 	letter-spacing: 0.02em;
 	line-height: 1.6em;
@@ -292,12 +300,12 @@ iframe {
 	font-size: 2.6em;
 	line-height: 1em;
 	text-transform: uppercase;
-	font-family:'Signika', sans-serif;
-	font-weight: 800;
+	font-family:'Source Sans Pro', sans-serif;
+	font-weight: 600;
 	padding: 6% 0;
 	text-transform: uppercase;
 	overflow: visible;
-	color: #435058;
+	color: #0064FF;
 	text-align: center;
 
 }
@@ -339,7 +347,6 @@ figcaption {
 	width: 70%;
 	margin: 0px auto;
 	height: auto;
-    color: #445055;
     background-color: #ffffff;
     opacity: 1;
 }
@@ -350,7 +357,6 @@ figcaption {
 .featured figcaption h3 {
     margin: 0px;
     padding: 0;
-    color:#445055;
     font-size: 24px;
 }
 
@@ -358,11 +364,11 @@ figcaption {
 /* This is the Read More link */
 .featured figcaption a {
     padding: 0px;
-    color: #fd6745;
+    color: #0064FF;
     text-decoration: underline;
 }
 .featured figcaption a:hover{
-	color: #469AB7;
+	color: #fd6745;
 }
 
 
@@ -381,7 +387,7 @@ figcaption {
 button, .button {
 	width: auto;
 	height: 50px;
-	background: #469AB7;
+	background: #0064FF;
 	border: none;
 	 -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -418,7 +424,7 @@ footer {
 	width: 100%;
 	height: auto;
 	text-align: center;
-	background: #445055;
+	background: #0064FF;
 	padding: 2em 1em;
 }
 
